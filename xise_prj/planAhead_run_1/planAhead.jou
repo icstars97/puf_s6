@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jan 24 23:14:42 2022
+# Process ID: 4060
+# Log file: I:/FPGA_projects/puf/xise_prj/planAhead_run_1/planAhead.log
+# Journal file: I:/FPGA_projects/puf/xise_prj/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source I:/FPGA_projects/puf/xise_prj/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

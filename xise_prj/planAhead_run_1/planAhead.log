@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jan 24 23:14:42 2022
+# Process ID: 4060
+# Log file: I:/FPGA_projects/puf/xise_prj/planAhead_run_1/planAhead.log
+# Journal file: I:/FPGA_projects/puf/xise_prj/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from I:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [I:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [I:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source I:/FPGA_projects/puf/xise_prj/pa.fromHdl.tcl
+# create_project -name puf -dir "I:/FPGA_projects/puf/xise_prj/planAhead_run_1" -part xc6slx9tqg144-2
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf" [current_fileset -constrset]
+Adding file 'I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {../src/hdl/impl/mux.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../src/hdl/impl/mux_array.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../src/hdl/impl/arbiter_puf.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../src/hdl/impl/toplevel.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top toplevel $srcset
+# add_files [list {I:/FPGA_projects/puf/src/constraints/arbiter_puf_pin.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-2
+Using Verific elaboration
+Parsing VHDL file "I:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "I:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "I:/FPGA_projects/puf/src/hdl/impl/toplevel.vhd" into library work
+WARNING: [HDL 9-806] Syntax error near "end". [I:/FPGA_projects/puf/src/hdl/impl/toplevel.vhd:73]
+Loading clock regions from I:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from I:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from I:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from I:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from I:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from I:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : I:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'mux_array_inst' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:11]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'arbiter_puf_inst/mux_array_inst' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:16]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net 'arbiter_puf_inst/d_trig_inst' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:18]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'arbiter_puf_inst/d_trig_inst' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:19]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'arbiter_puf_inst/d_trig_inst' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:22]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'arbiter_puf_inst/mux_array_inst/array_gen[0].mux_instance_even/mux_inst' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:23]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell or net or pin 'arbiter_puf_inst/mux_array_inst/array_gen[0].mux_instance_odd/mux_inst' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:24]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/axi_timer_0' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:28]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/microblaze_0_d_bram_ctrl' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:29]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/debug_module' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:30]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/RS232' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:31]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/Generic_GPIO' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:32]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/proc_sys_reset_0' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:33]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/microblaze_0' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:34]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/microblaze_0_intc' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:35]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/microblaze_0_bram_block' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:36]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/axi4lite_0' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:37]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/microblaze_0_dlmb' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:38]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/microblaze_0_i_bram_ctrl' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:39]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/microblaze_0_ilmb' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:40]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'ublaze_inst/clock_generator_0' [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf:41]
+Finished Parsing UCF File [I:/FPGA_projects/puf/src/constraints/arbiter_puf_place.ucf]
+Parsing UCF File [I:/FPGA_projects/puf/src/constraints/arbiter_puf_pin.ucf]
+Finished Parsing UCF File [I:/FPGA_projects/puf/src/constraints/arbiter_puf_pin.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f93ccbf4
+open_rtl_design: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 899.801 ; gain = 177.914
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

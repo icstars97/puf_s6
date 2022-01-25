@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "I:/FPGA_projects/puf/xise_prj/arbiter_test_isim_par.exe" -prj "I:/FPGA_projects/puf/xise_prj/arbiter_test_par.prj" "work.arbiter_test" 

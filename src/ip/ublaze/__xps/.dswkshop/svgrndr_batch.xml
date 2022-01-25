@@ -1,0 +1,34 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\proc_sys_reset_0.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_intc.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_intc.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\microblaze_0_intc.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\microblaze_0_ilmb.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\microblaze_0_i_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\microblaze_0_dlmb.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\microblaze_0_d_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\microblaze_0_bram_block.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\debug_module.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\debug_module.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\debug_module.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\clock_generator_0.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\clock_generator_0.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\clock_generator_0.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\axi4lite_0.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\axi4lite_0.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\axi4lite_0.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\RS232.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\RS232.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\RS232.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\Generic_GPIO.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\Generic_GPIO.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\Generic_GPIO.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\axi_timer_0.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\axi_timer_0.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\axi_timer_0.svg"/>
+
+  <RENDERIMG RASNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\ublaze_blkd.jpg" SVGNAME="I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\imgs\ublaze_blkd.svg" TMPSVGFN="I:\FPGA_projects\puf\src\ip\ublaze\__xps\.dswkshop\ublaze_blkd.svg"/>
+
+</RENDERBATCH>

@@ -1,0 +1,8 @@
+TIMEGRP "GRP_INTC_intr_sync_microblaze_0_intc" = FFS ("microblaze_0_intc/INTC_CORE_I/intr_sync*");
+TIMEGRP "GRP_INTC_intr_p1_microblaze_0_intc" = FFS ("microblaze_0_intc/INTC_CORE_I/intr_p1*");
+TIMESPEC "TS_sync_microblaze_0_intc" = TO "GRP_INTC_intr_sync_microblaze_0_intc" TIG;
+TIMESPEC "TS_intr_sync_p1_microblaze_0_intc" = FROM "GRP_INTC_intr_sync_microblaze_0_intc" TO "GRP_INTC_intr_p1_microblaze_0_intc" TIG;
+NET "S_AXI_ACLK" TNM_NET = "S_AXI_ACLK_microblaze_0_intc";
+NET "Processor_clk" TNM_NET = "Processor_clk_microblaze_0_intc";
+TIMESPEC "TS_MB_AXI_FP_microblaze_0_intc" = FROM "Processor_clk_microblaze_0_intc" TO "S_AXI_ACLK_microblaze_0_intc" TIG;
+TIMESPEC "TS_AXI_MB_FP_microblaze_0_intc" = FROM "S_AXI_ACLK_microblaze_0_intc" TO "Processor_clk_microblaze_0_intc" TIG;

@@ -1,0 +1,13 @@
+-p
+xc6slx9tqg144-2
+-lang
+vhdl
+-intstyle
+ise
+-toplevel
+no
+-ti
+ublaze_i
+-msg
+__xps/ise/xmsgprops.lst
+ublaze.mhs

@@ -1,0 +1,55 @@
+23:45:15.748 INFO  - Processing command line option -hwspec I:/FPGA_projects/puf/src/ip/ublaze/SDK/SDK_Export/hw/ublaze.xml. 
+23:50:04.631 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+23:52:09.175 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+23:53:39.287 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+23:54:22.143 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:55:04.133 ERROR - Unsatisfied link error while loading libSdkJHwPlatform.dll: java.lang.UnsatisfiedLinkError: no libSdkJHwPlatform in java.library.path 
+23:55:08.612 ERROR - Unsatisfied link error while loading libSdkJJTAGSettings.dll: java.lang.UnsatisfiedLinkError: no libSdkJJTAGSettings in java.library.path 
+23:59:18.759 INFO  - Processing command line option -hwspec I:\FPGA_projects\puf\src\ip\ublaze\SDK\SDK_Export\hw\ublaze.xml. 
+23:59:32.662 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+00:12:15.625 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:26:05.313 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+23:26:33.945 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+23:26:43.086 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+23:28:47.122 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:45:17.716 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/puf/edk/ublaze_hw_platform/download.bit" 
+23:46:41.355 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/puf/edk/ublaze_hw_platform/download.bit" 
+23:48:05.932 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/puf/edk/ublaze_hw_platform/download.bit" 
+23:49:09.660 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/puf/edk/ublaze_hw_platform/download.bit" 
+23:57:59.727 INFO  - System reset is completed. 
+00:18:33.925 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
