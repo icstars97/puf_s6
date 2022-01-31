@@ -50,7 +50,7 @@ puf.elf.size: puf.elf
 
 puf.elf.elfcheck: puf.elf
 	@echo 'Invoking: Xilinx ELF Check'
-	elfcheck puf.elf -hw ../../ublaze_hw_platform/system.xml -pe microblaze_0  |tee "puf.elf.elfcheck"
+	elfcheck puf.elf -hw ../../ublaze_hw_platform_0/system.xml -pe microblaze_0  |tee "puf.elf.elfcheck"
 	@echo 'Finished building: $@'
 	@echo ' '
 

@@ -1,40 +1,18 @@
 /*
  * main.h
  *
- *  Created on: 21.01.2022
- *      Author: Андрей
+ *  Created on: Jan 26, 2022
+ *      Author: ise
  */
 
 #ifndef MAIN_H_
 #define MAIN_H_
 
-#include "xgpio.h"
-#include "xintc.h"
-#include "xuartlite.h"
-#include "xtmrctr.h"
 #include "xparameters.h"
+#include "xgpio.h"
+#include "xstatus.h"
+#include "xuartlite.h"
 
-
-void platform_init(void);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+int platform_init(void);
+void sleep(u32 sleep_ticks);
 #endif /* MAIN_H_ */

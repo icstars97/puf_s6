@@ -13,9 +13,9 @@ entity ublaze_stub is
     uart_rx : in std_logic;
     nrst : in std_logic;
     clkin : in std_logic;
-    gpio_1_i : in std_logic_vector(7 downto 0);
-    gpio_1_o : out std_logic_vector(7 downto 0);
-    gpio_0 : out std_logic_vector(31 downto 0)
+    gpio_2_i : in std_logic_vector(7 downto 0);
+    gpio_2_o : out std_logic_vector(7 downto 0);
+    gpio_1 : out std_logic_vector(31 downto 0)
   );
 end ublaze_stub;
 
@@ -27,9 +27,9 @@ architecture STRUCTURE of ublaze_stub is
       uart_rx : in std_logic;
       nrst : in std_logic;
       clkin : in std_logic;
-      gpio_1_i : in std_logic_vector(7 downto 0);
-      gpio_1_o : out std_logic_vector(7 downto 0);
-      gpio_0 : out std_logic_vector(31 downto 0)
+      gpio_2_i : in std_logic_vector(7 downto 0);
+      gpio_2_o : out std_logic_vector(7 downto 0);
+      gpio_1 : out std_logic_vector(31 downto 0)
     );
   end component;
 
@@ -44,9 +44,9 @@ begin
       uart_rx => uart_rx,
       nrst => nrst,
       clkin => clkin,
-      gpio_1_i => gpio_1_i,
-      gpio_1_o => gpio_1_o,
-      gpio_0 => gpio_0
+      gpio_2_i => gpio_2_i,
+      gpio_2_o => gpio_2_o,
+      gpio_1 => gpio_1
     );
 
 end architecture STRUCTURE;

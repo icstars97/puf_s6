@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o /home/ise/ise_proj/puf_s6/xise_prj//Untitled -s 2048 -u 0000 /home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform/system.bit -spi 
+
+PROM /home/ise/ise_proj/puf_s6/xise_prj/Untitled.prm map: Wed Jan 26 10:31:03 2022
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          2048K
+PROM start    0000:0000
+PROM end      001f:ffff
+PROM checksum 1b072a86
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Jan 26 10:09:51 2022 /home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform/system.bit

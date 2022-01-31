@@ -1,13 +1,13 @@
-Release 14.7 ngcbuild P.20131013 (nt64)
+Release 14.7 ngcbuild P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: I:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -p
 xc6slx9tqg144-2 -intstyle silent -i -sd .. ublaze_clock_generator_0_wrapper.ngc
 ../ublaze_clock_generator_0_wrapper
 
 Reading NGO file
-"I:/FPGA_projects/puf/src/ip/ublaze/implementation/clock_generator_0_wrapper/ubl
-aze_clock_generator_0_wrapper.ngc" ...
+"/home/ise/ise_proj/puf_s6/src/ip/ublaze/implementation/clock_generator_0_wrappe
+r/ublaze_clock_generator_0_wrapper.ngc" ...
 
 Partition Implementation Status
 -------------------------------
@@ -20,10 +20,10 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4396956 kilobytes
+Total memory usage is 394728 kilobytes
 
 Writing NGC file "../ublaze_clock_generator_0_wrapper.ngc" ...
-Total REAL time to NGCBUILD completion:  4 sec
-Total CPU time to NGCBUILD completion:   3 sec
+Total REAL time to NGCBUILD completion:  5 sec
+Total CPU time to NGCBUILD completion:   5 sec
 
 Writing NGCBUILD log file "../ublaze_clock_generator_0_wrapper.blc"...

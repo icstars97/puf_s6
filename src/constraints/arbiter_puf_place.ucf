@@ -13,17 +13,14 @@ INST "mux_array_inst" AREA_GROUP = "pblock_mux_array_inst";
 
 
 
-INST "arbiter_puf_inst/mux_array_inst" AREA_GROUP = "pblock_mux_array_inst";
-AREA_GROUP "pblock_mux_array_inst" RANGE=SLICE_X20Y30:SLICE_X23Y61;
 INST "arbiter_puf_inst/d_trig_inst" BEL = BFF;
-INST "arbiter_puf_inst/d_trig_inst" LOC = SLICE_X21Y29;
+INST "arbiter_puf_inst/d_trig_inst" LOC = SLICE_X21Y51;
 
 
 INST "arbiter_puf_inst/d_trig_inst" IOB =FALSE;
 INST "arbiter_puf_inst/mux_array_inst/array_gen[0].mux_instance_even/mux_inst" IOB =FALSE;
 INST "arbiter_puf_inst/mux_array_inst/array_gen[0].mux_instance_odd/mux_inst" IOB =FALSE;
 
-# PlanAhead Generated physical constraints 
 
 INST "ublaze_inst/axi_timer_0" AREA_GROUP = "pblock_1";
 INST "ublaze_inst/microblaze_0_d_bram_ctrl" AREA_GROUP = "pblock_1";
@@ -43,3 +40,8 @@ AREA_GROUP "pblock_1" RANGE=SLICE_X16Y2:SLICE_X19Y61, SLICE_X14Y0:SLICE_X15Y63, 
 AREA_GROUP "pblock_1" RANGE=DSP48_X0Y0:DSP48_X0Y15;
 AREA_GROUP "pblock_1" RANGE=RAMB16_X0Y0:RAMB16_X0Y30;
 AREA_GROUP "pblock_1" RANGE=RAMB8_X0Y0:RAMB8_X0Y31;
+
+# PlanAhead Generated physical constraints 
+
+INST "arbiter_puf_inst/mux_array_inst" AREA_GROUP = "pblock_mux_array_inst";
+AREA_GROUP "pblock_mux_array_inst" RANGE=SLICE_X20Y52:SLICE_X23Y61;

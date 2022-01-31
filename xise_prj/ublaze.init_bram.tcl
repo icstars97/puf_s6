@@ -1,4 +1,4 @@
-cd I:/FPGA_projects/puf/src/ip/ublaze
+cd /home/ise/ise_proj/puf_s6/src/ip/ublaze
 if { [ catch { xload xmp ublaze.xmp } result ] } {
   exit 10
 }

@@ -1,0 +1,450 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -1737 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/ise/ise_proj/puf_s6/xise_prj/pa.fromNetlist.tcl
+# create_project -name puf -dir "/home/ise/ise_proj/puf_s6/xise_prj/planAhead_run_2" -part xc6slx9tqg144-2
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/ise/ise_proj/puf_s6/xise_prj/toplevel.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/ise/ise_proj/puf_s6/xise_prj} }
+# add_files [list {/home/ise/ise_proj/puf_s6/xise_prj/ublaze.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/ise/ise_proj/puf_s6/xise_prj/ublaze_axi4lite_0_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/ise/ise_proj/puf_s6/xise_prj/ublaze_clock_generator_0_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_dlmb_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_ilmb_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_intc_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_place.ucf" [current_fileset -constrset]
+Adding file '/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_place.ucf' to fileset 'constrs_1'
+# add_files [list {/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_pin.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_place.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx9tqg144-2
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design toplevel.ngc ...
+WARNING:NetListWriters:298 - No output is written to toplevel.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file toplevel.edif ...
+ngc2edif: Total memory usage is 113116 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/toplevel_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/toplevel_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_generic_gpio_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_generic_gpio_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Generic_GPIO/ip2bus_data_i[31 : 0] on
+   block ublaze_generic_gpio_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Generic_GPIO/n0097[7 : 5] on block
+   ublaze_generic_gpio_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Generic_GPIO/bus2ip_addr[6 : 0] on block
+   ublaze_generic_gpio_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ublaze_generic_gpio_wrapper.edif ...
+ngc2edif: Total memory usage is 105540 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_generic_gpio_wrapper.ngc' for (cell view 'ublaze_generic_gpio_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_generic_gpio_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_generic_gpio_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_rs232_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to ublaze_rs232_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus RS232/bus2ip_rdce<3 : 1> on block
+   ublaze_rs232_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file ublaze_rs232_wrapper.edif ...
+ngc2edif: Total memory usage is 104504 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_rs232_wrapper.ngc' for (cell view 'ublaze_rs232_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_rs232_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_rs232_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_proc_sys_reset_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_proc_sys_reset_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/pr_dec<2 : 0> on
+   block ublaze_proc_sys_reset_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/bsr_dec<2 : 0> on
+   block ublaze_proc_sys_reset_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ublaze_proc_sys_reset_0_wrapper.edif ...
+ngc2edif: Total memory usage is 104144 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_proc_sys_reset_0_wrapper.ngc' for (cell view 'ublaze_proc_sys_reset_0_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_proc_sys_reset_0_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_proc_sys_reset_0_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_clock_generator_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_clock_generator_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ublaze_clock_generator_0_wrapper.edif ...
+ngc2edif: Total memory usage is 103984 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_clock_generator_0_wrapper.ngc' for (cell view 'ublaze_clock_generator_0_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_clock_generator_0_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_clock_generator_0_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_microblaze_0_ilmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_microblaze_0_ilmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ublaze_microblaze_0_ilmb_wrapper.edif ...
+ngc2edif: Total memory usage is 104024 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_ilmb_wrapper.ngc' for (cell view 'ublaze_microblaze_0_ilmb_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_ilmb_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_ilmb_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_microblaze_0_dlmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_microblaze_0_dlmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ublaze_microblaze_0_dlmb_wrapper.edif ...
+ngc2edif: Total memory usage is 104024 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_dlmb_wrapper.ngc' for (cell view 'ublaze_microblaze_0_dlmb_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_dlmb_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_dlmb_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_axi4lite_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_axi4lite_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_i
+   nst/m_amesg_i<48 : 1> on block ublaze_axi4lite_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0/cb_mf_awvalid<4 : 2> on block
+   ublaze_axi4lite_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_i
+   nst/s_amesg<48 : 1> on block ublaze_axi4lite_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ublaze_axi4lite_0_wrapper.edif ...
+ngc2edif: Total memory usage is 106388 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_axi4lite_0_wrapper.ngc' for (cell view 'ublaze_axi4lite_0_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_axi4lite_0_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_axi4lite_0_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_microblaze_0_intc_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_microblaze_0_intc_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i<31 : 0> on
+   block ublaze_microblaze_0_intc_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus microblaze_0_intc/read_data<10 : 0> on
+   block ublaze_microblaze_0_intc_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ublaze_microblaze_0_intc_wrapper.edif ...
+ngc2edif: Total memory usage is 104620 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_intc_wrapper.ngc' for (cell view 'ublaze_microblaze_0_intc_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_intc_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_intc_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_microblaze_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_microblaze_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/control_reg[8 : 0] on block ublaze_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus microblaze_0/LOCKSTEP_Out[3817 : 0] on
+   block ublaze_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.mem_MSR[30 : 0] on block
+   ublaze_microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.ex_MSR[30 : 0] on block
+   ublaze_microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry[9 : 1]
+   on block ublaze_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_pipe_ctrl[10 : 2] on
+   block ublaze_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_
+   FPGA_Buffers_Mux.buffer_or_new[32 : 0] on block ublaze_microblaze_0_wrapper
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_
+   FPGA_Buffers_Mux.srl16[42 : 0] on block ublaze_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/Detect_Commands.sample[6 : 0] on block ublaze_microblaze_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/status_reg[27 : 0] on block ublaze_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/Use_SRL16.tdo_config_word1[15 : 0] on block ublaze_microblaze_0_wrapper
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/n0084[30 : 0] on block
+   ublaze_microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/mem_fwd[30 : 0] on
+   block ublaze_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/wb_MSR_cmb[3
+   0 : 28] on block ublaze_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/of_MSR_i[31
+   : 17] on block ublaze_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/ex_MSR_i[31
+   : 17] on block ublaze_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/mem_MSR_i[31
+   : 17] on block ublaze_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ublaze_microblaze_0_wrapper.edif ...
+ngc2edif: Total memory usage is 118108 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_wrapper.ngc' for (cell view 'ublaze_microblaze_0_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_microblaze_0_i_bram_ctrl_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_microblaze_0_i_bram_ctrl_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ublaze_microblaze_0_i_bram_ctrl_wrapper.edif ...
+ngc2edif: Total memory usage is 104260 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_i_bram_ctrl_wrapper.ngc' for (cell view 'ublaze_microblaze_0_i_bram_ctrl_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_i_bram_ctrl_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_i_bram_ctrl_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_microblaze_0_d_bram_ctrl_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_microblaze_0_d_bram_ctrl_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ublaze_microblaze_0_d_bram_ctrl_wrapper.edif ...
+ngc2edif: Total memory usage is 104248 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_d_bram_ctrl_wrapper.ngc' for (cell view 'ublaze_microblaze_0_d_bram_ctrl_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_d_bram_ctrl_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_d_bram_ctrl_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_debug_module_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_debug_module_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus debug_module/MDM_Core_I1/Config_Reg<31 :
+   1> on block ublaze_debug_module_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ublaze_debug_module_wrapper.edif ...
+ngc2edif: Total memory usage is 104996 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_debug_module_wrapper.ngc' for (cell view 'ublaze_debug_module_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_debug_module_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_debug_module_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_axi_timer_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_axi_timer_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_timer_0/bus2ip_rdce<6 : 0> on block
+   ublaze_axi_timer_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_timer_0/TC_CORE_I/tCSR0_Reg<31 : 20>
+   on block ublaze_axi_timer_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ublaze_axi_timer_0_wrapper.edif ...
+ngc2edif: Total memory usage is 105540 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_axi_timer_0_wrapper.ngc' for (cell view 'ublaze_axi_timer_0_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_axi_timer_0_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_axi_timer_0_wrapper_ngc_d012ad84.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ublaze_microblaze_0_bram_block_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   ublaze_microblaze_0_bram_block_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ublaze_microblaze_0_bram_block_wrapper.edif ...
+ngc2edif: Total memory usage is 104732 kilobytes
+
+Reading core file '/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_bram_block_wrapper.ngc' for (cell view 'ublaze_microblaze_0_bram_block_wrapper', library 'toplevel_lib', file 'toplevel.ngc')
+Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_bram_block_wrapper_ngc_d012ad84.edif]
+Finished Parsing EDIF File [./planAhead_run_2/puf.data/cache/ublaze_microblaze_0_bram_block_wrapper_ngc_d012ad84.edif]
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_axi4lite_0_wrapper.ncf]
+Finished Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_axi4lite_0_wrapper.ncf]
+Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_clock_generator_0_wrapper.ncf]
+Finished Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_clock_generator_0_wrapper.ncf]
+Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_dlmb_wrapper.ncf]
+Finished Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_dlmb_wrapper.ncf]
+Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_ilmb_wrapper.ncf]
+Finished Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_ilmb_wrapper.ncf]
+Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_intc_wrapper.ncf]
+Finished Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_intc_wrapper.ncf]
+Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_wrapper.ncf]
+Finished Parsing UCF File [/home/ise/ise_proj/puf_s6/xise_prj/ublaze_microblaze_0_wrapper.ncf]
+Parsing UCF File [/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_place.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find cell 'mux_array_inst' [/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_place.ucf:11]
+Finished Parsing UCF File [/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_place.ucf]
+Parsing UCF File [/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_pin.ucf]
+Finished Parsing UCF File [/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_pin.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 112 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 96 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+
+Phase 0 | Netlist Checksum: e092eadd
+link_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 2874.449 ; gain = 212.371
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Jan 31 14:16:02 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

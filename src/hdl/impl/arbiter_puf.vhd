@@ -33,9 +33,9 @@ use UNISIM.VComponents.all;
 
 entity arbiter_puf is
 	generic(puf_length : integer := 32);
-	port(i_pulse : in std_logic;
-		  i_challenge : in std_logic_vector(puf_length-1 downto 0);
-		  o_response : out std_logic);
+	port(i_pulse_arb : in std_logic;
+		  i_challenge_arb : in std_logic_vector(puf_length-1 downto 0);
+		  o_response_arb : out std_logic);
 end arbiter_puf;
 
 architecture rtl of arbiter_puf is
@@ -50,8 +50,8 @@ begin
 
 	mux_array_inst : entity work.mux_array(rtl)
 		generic map(arr_length => puf_length)
-		port map(i_p => i_pulse,
-					i_ch => i_challenge,
+		port map(i_p => i_pulse_arb,
+					i_ch => i_challenge_arb,
 					o_out1 => s_mux1,
 					o_out2 => s_mux2);
 					
@@ -61,7 +61,7 @@ begin
 					c => s_mux2,
 					ce => '1',
 					r => '0',
-					q => o_response);
+					q => o_response_arb);
 					
 end rtl;
 

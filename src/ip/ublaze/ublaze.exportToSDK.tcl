@@ -1,5 +1,5 @@
 proc exportToSDK {} {
-  cd I:/FPGA_projects/puf/src/ip/ublaze
+  cd /home/ise/ise_proj/puf_s6/src/ip/ublaze
   if { [ catch { xload xmp ublaze.xmp } result ] } {
     exit 10
   }
@@ -14,13 +14,13 @@ if { [catch {exportToSDK} result] } {
 }
 
 set sExportDir [ xget sdk_export_dir ]
-set sExportDir [ file join "I:/FPGA_projects/puf/src/ip/ublaze" "$sExportDir" "hw" ] 
-if { [ file exists I:/FPGA_projects/puf/xise_prj/edkBmmFile_bd.bmm ] } {
-   puts "Copying placed bmm file I:/FPGA_projects/puf/xise_prj/edkBmmFile_bd.bmm to $sExportDir" 
-   file copy -force "I:/FPGA_projects/puf/xise_prj/edkBmmFile_bd.bmm" $sExportDir
+set sExportDir [ file join "/home/ise/ise_proj/puf_s6/src/ip/ublaze" "$sExportDir" "hw" ] 
+if { [ file exists /home/ise/ise_proj/puf_s6/xise_prj/edkBmmFile_bd.bmm ] } {
+   puts "Copying placed bmm file /home/ise/ise_proj/puf_s6/xise_prj/edkBmmFile_bd.bmm to $sExportDir" 
+   file copy -force "/home/ise/ise_proj/puf_s6/xise_prj/edkBmmFile_bd.bmm" $sExportDir
 }
-if { [ file exists I:/FPGA_projects/puf/xise_prj/toplevel.bit ] } {
-   puts "Copying bit file I:/FPGA_projects/puf/xise_prj/toplevel.bit to $sExportDir" 
-   file copy -force "I:/FPGA_projects/puf/xise_prj/toplevel.bit" $sExportDir
+if { [ file exists /home/ise/ise_proj/puf_s6/xise_prj/toplevel.bit ] } {
+   puts "Copying bit file /home/ise/ise_proj/puf_s6/xise_prj/toplevel.bit to $sExportDir" 
+   file copy -force "/home/ise/ise_proj/puf_s6/xise_prj/toplevel.bit" $sExportDir
 }
 exit $result

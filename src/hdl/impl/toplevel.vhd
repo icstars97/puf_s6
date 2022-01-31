@@ -37,21 +37,21 @@ entity toplevel is
 end toplevel;
 
 architecture rtl of toplevel is
-	signal ublaze_io0 : std_logic_vector(31 downto 0);
-	signal ublaze_io1_o : std_logic_vector(7 downto 0);
-	signal ublaze_io1_i : std_logic_vector(7 downto 0);
+	signal s_ublaze_io1 : std_logic_vector(31 downto 0);
+	signal s_ublaze_io2_o : std_logic_vector(7 downto 0);
+	signal s_ublaze_io2_i : std_logic_vector(7 downto 0);
+	constant c_puf_length : integer := 10;
 	component ublaze
 	port(
 		uart_rx : in std_logic;
 		nrst : in std_logic;
 		clkin : in std_logic;
-		gpio_1_i : in std_logic_vector(7 downto 0);    
-		gpio_0 : inout std_logic_vector(31 downto 0);      
+		gpio_2_i : in std_logic_vector(7 downto 0);    
+		gpio_1 : inout std_logic_vector(31 downto 0);      
 		uart_tx : out std_logic;
-		gpio_1_o : out std_logic_vector(7 downto 0)
+		gpio_2_o : out std_logic_vector(7 downto 0)
 		);
 	end component;
-
 begin
 	
 	ublaze_inst : ublaze
@@ -59,15 +59,15 @@ begin
 					uart_rx => i_uart_rx,
 					nrst => i_nrst,
 					clkin => i_clk,
-					gpio_0 => ublaze_io0,
-					gpio_1_i => ublaze_io1_i,
-					gpio_1_o => ublaze_io1_o);
+					gpio_1 => s_ublaze_io1,
+					gpio_2_i => s_ublaze_io2_i,
+					gpio_2_o => s_ublaze_io2_o);
 					
 	arbiter_puf_inst : entity work.arbiter_puf(rtl)
-		generic map(puf_length => 10)
-		port map(i_pulse => ublaze_io1_o(0),
-					i_challenge => ublaze_io0,
-					o_response => ublaze_io1_i(1));
+		generic map(puf_length => c_puf_length)
+		port map(i_pulse_arb => s_ublaze_io2_o(0),
+					i_challenge_arb => s_ublaze_io1(c_puf_length - 1 downto 0),
+					o_response_arb => s_ublaze_io2_i(1));
 					
 	
 end rtl;

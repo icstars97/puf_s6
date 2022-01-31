@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-01-19T23:58:51</DateModified>
+  <DateModified>2022-01-31T13:54:06</DateModified>
   <ModuleName>ublaze</ModuleName>
-  <SummaryTimeStamp>2022-01-19T23:58:50</SummaryTimeStamp>
-  <SavedFilePath>I:/FPGA_projects/puf/src/ip/ublaze/__xps/ise/ublaze.xreport</SavedFilePath>
+  <SummaryTimeStamp>2022-01-31T13:54:06</SummaryTimeStamp>
+  <SavedFilePath>/home/ise/ise_proj/puf_s6/src/ip/ublaze/__xps/ise/ublaze.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
-  <SavedFilterFilePath>I:/FPGA_projects/puf/src/ip/ublaze/__xps/ise</SavedFilterFilePath>
+  <SavedFilterFilePath>/home/ise/ise_proj/puf_s6/src/ip/ublaze/__xps/ise</SavedFilterFilePath>
   <DateInitialized>2022-01-16T22:33:21</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

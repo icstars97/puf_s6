@@ -15,9 +15,9 @@
  PORT uart_rx = RS232_Uart_1_sin, DIR = I
  PORT nrst = RESET, DIR = I, SIGIS = RST, RST_POLARITY = 0
  PORT clkin = CLK, DIR = I, SIGIS = CLK, CLK_FREQ = 50000000
- PORT gpio_1_i = Generic_GPIO_GPIO2_IO_I, DIR = I, VEC = [7:0]
- PORT gpio_1_o = Generic_GPIO_GPIO2_IO_O, DIR = O, VEC = [7:0]
- PORT gpio_0 = Generic_GPIO_GPIO_IO_O, DIR = O, VEC = [31:0]
+ PORT gpio_2_i = Generic_GPIO_GPIO2_IO_I, DIR = I, VEC = [7:0]
+ PORT gpio_2_o = Generic_GPIO_GPIO2_IO_O, DIR = O, VEC = [7:0]
+ PORT gpio_1 = Generic_GPIO_GPIO_IO_O, DIR = O, VEC = [31:0]
 
 
 BEGIN proc_sys_reset

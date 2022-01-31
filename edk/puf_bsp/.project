@@ -3,7 +3,7 @@
 	<name>puf_bsp</name>
 	<comment></comment>
 	<projects>
-		<project>ublaze_hw_platform</project>
+		<project>ublaze_hw_platform_0</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

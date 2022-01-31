@@ -1,12 +1,14 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to I:\FPGA_projects\puf\src\ip\ublaze\synthesis\xst_temp_dir\
+--> 
+Parameter TMPDIR set to /home/ise/ise_proj/puf_s6/src/ip/ublaze/synthesis/xst_temp_dir/
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
+
 TABLE OF CONTENTS
   1) Synthesis Options Summary
   2) HDL Parsing
@@ -35,7 +37,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "ublaze_microblaze_0_dlmb_wrapper_xst.prj"
-Verilog Include Directory          : {"I:\FPGA_projects\puf\src\ip\ublaze\pcores\" "I:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "I:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"/home/ise/ise_proj/puf_s6/src/ip/ublaze/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
 
 ---- Target Parameters
 Target Device                      : xc6slx9tqg144-2
@@ -62,10 +64,10 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "I:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" into library lmb_v10_v2_00_b
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" into library lmb_v10_v2_00_b
 Parsing entity <lmb_v10>.
 Parsing architecture <IMP> of entity <lmb_v10>.
-Parsing VHDL file "I:\FPGA_projects\puf\src\ip\ublaze\hdl\ublaze_microblaze_0_dlmb_wrapper.vhd" into library work
+Parsing VHDL file "/home/ise/ise_proj/puf_s6/src/ip/ublaze/hdl/ublaze_microblaze_0_dlmb_wrapper.vhd" into library work
 Parsing entity <ublaze_microblaze_0_dlmb_wrapper>.
 Parsing architecture <STRUCTURE> of entity <ublaze_microblaze_0_dlmb_wrapper>.
 
@@ -76,20 +78,20 @@ Parsing architecture <STRUCTURE> of entity <ublaze_microblaze_0_dlmb_wrapper>.
 Elaborating entity <ublaze_microblaze_0_dlmb_wrapper> (architecture <STRUCTURE>) from library <work>.
 
 Elaborating entity <lmb_v10> (architecture <IMP>) with generics from library <lmb_v10_v2_00_b>.
-WARNING:HDLCompiler:89 - "I:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" Line 146: <fds> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" Line 146: <fds> remains a black-box since it has no binding entity.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <ublaze_microblaze_0_dlmb_wrapper>.
-    Related source file is "I:\FPGA_projects\puf\src\ip\ublaze\hdl\ublaze_microblaze_0_dlmb_wrapper.vhd".
+    Related source file is "/home/ise/ise_proj/puf_s6/src/ip/ublaze/hdl/ublaze_microblaze_0_dlmb_wrapper.vhd".
     Summary:
 	no macro.
 Unit <ublaze_microblaze_0_dlmb_wrapper> synthesized.
 
 Synthesizing Unit <lmb_v10>.
-    Related source file is "I:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd".
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd".
         C_LMB_NUM_SLAVES = 1
         C_LMB_DWIDTH = 32
         C_LMB_AWIDTH = 32
@@ -286,12 +288,13 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.07 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.54 secs
  
 --> 
 
-Total memory usage is 4502620 kilobytes
+
+Total memory usage is 488284 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

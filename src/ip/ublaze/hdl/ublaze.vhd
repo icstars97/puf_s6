@@ -13,9 +13,9 @@ entity ublaze is
     uart_rx : in std_logic;
     nrst : in std_logic;
     clkin : in std_logic;
-    gpio_1_i : in std_logic_vector(7 downto 0);
-    gpio_1_o : out std_logic_vector(7 downto 0);
-    gpio_0 : out std_logic_vector(31 downto 0)
+    gpio_2_i : in std_logic_vector(7 downto 0);
+    gpio_2_o : out std_logic_vector(7 downto 0);
+    gpio_1 : out std_logic_vector(31 downto 0)
   );
 end ublaze;
 
@@ -1903,9 +1903,9 @@ begin
   RS232_Uart_1_sin <= uart_rx;
   RESET <= nrst;
   CLK <= clkin;
-  Generic_GPIO_GPIO2_IO_I <= gpio_1_i;
-  gpio_1_o <= Generic_GPIO_GPIO2_IO_O;
-  gpio_0 <= Generic_GPIO_GPIO_IO_O;
+  Generic_GPIO_GPIO2_IO_I <= gpio_2_i;
+  gpio_2_o <= Generic_GPIO_GPIO2_IO_O;
+  gpio_1 <= Generic_GPIO_GPIO_IO_O;
   pgassign1(3) <= debug_module_Interrupt;
   pgassign1(2) <= Generic_GPIO_IP2INTC_Irpt;
   pgassign1(1) <= axi_timer_0_Interrupt;

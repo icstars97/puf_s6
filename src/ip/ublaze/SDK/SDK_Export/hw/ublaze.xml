@@ -1,7 +1,7 @@
 
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Wed Jan 19 23:43:38 2022">
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Wed Jan 26 10:09:13 2022">
 
-  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx9" PACKAGE="tqg144" PART="xc6slx9tqg144-2" SOURCE="I:/FPGA_projects/puf/src/ip/ublaze/ublaze.xmp" SPEEDGRADE="-2"/>
+  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx9" PACKAGE="tqg144" PART="xc6slx9tqg144-2" SOURCE="/home/ise/ise_proj/puf_s6/src/ip/ublaze/ublaze.xmp" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
     <PORT DIR="O" MHS_INDEX="0" NAME="uart_tx" SIGNAME="RS232_Uart_1_sout">
@@ -1810,7 +1810,7 @@
       <DESCRIPTION TYPE="SHORT">MicroBlaze</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">The MicroBlaze 32 bit soft processor</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="I:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/doc/microblaze.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/doc/microblaze.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
