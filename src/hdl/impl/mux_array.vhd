@@ -66,8 +66,8 @@ begin
 				
 		mux_instance_odd : entity work.mux(clb_prim)
 			port map(
-				i_a => s_intc(2 * i),
-				i_b => s_intc(2 * i + 1),
+				i_a => s_intc(2 * i + 1),
+				i_b => s_intc(2 * i),
 				i_s => i_ch(i),
 				o_y => s_intc(2 * (i + 1) + 1));
 	end generate array_gen;

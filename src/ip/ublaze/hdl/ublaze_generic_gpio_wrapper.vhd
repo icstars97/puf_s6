@@ -35,9 +35,9 @@ entity ublaze_generic_gpio_wrapper is
     GPIO_IO_I : in std_logic_vector(31 downto 0);
     GPIO_IO_O : out std_logic_vector(31 downto 0);
     GPIO_IO_T : out std_logic_vector(31 downto 0);
-    GPIO2_IO_I : in std_logic_vector(7 downto 0);
-    GPIO2_IO_O : out std_logic_vector(7 downto 0);
-    GPIO2_IO_T : out std_logic_vector(7 downto 0)
+    GPIO2_IO_I : in std_logic_vector(31 downto 0);
+    GPIO2_IO_O : out std_logic_vector(31 downto 0);
+    GPIO2_IO_T : out std_logic_vector(31 downto 0)
   );
 
   attribute x_core_info : STRING;
@@ -101,7 +101,7 @@ begin
       C_INSTANCE => "Generic_GPIO",
       C_S_AXI_DATA_WIDTH => 32,
       C_GPIO_WIDTH => 32,
-      C_GPIO2_WIDTH => 8,
+      C_GPIO2_WIDTH => 32,
       C_ALL_INPUTS => 0,
       C_ALL_INPUTS_2 => 0,
       C_INTERRUPT_PRESENT => 1,

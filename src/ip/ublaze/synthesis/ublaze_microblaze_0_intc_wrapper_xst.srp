@@ -523,9 +523,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
         C_INSTANCE = "microblaze_0_intc"
         C_S_AXI_ADDR_WIDTH = 9
         C_S_AXI_DATA_WIDTH = 32
-        C_NUM_INTR_INPUTS = 4
+        C_NUM_INTR_INPUTS = 3
         C_NUM_SW_INTR = 4
-        C_KIND_OF_INTR = "11111111111111111111111111111001"
+        C_KIND_OF_INTR = "11111111111111111111111111111101"
         C_KIND_OF_EDGE = "11111111111111111111111111111111"
         C_KIND_OF_LVL = "11111111111111111111111111111111"
         C_IVAR_RESET_VALUE = "00000000000000000000000000010000"
@@ -565,9 +565,9 @@ Synthesizing Unit <intc_core>.
     Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_intc_v1_04_a/hdl/vhdl/intc_core.vhd".
         C_FAMILY = "spartan6"
         C_DWIDTH = 32
-        C_NUM_INTR_INPUTS = 4
+        C_NUM_INTR_INPUTS = 3
         C_NUM_SW_INTR = 4
-        C_KIND_OF_INTR = "11111111111111111111111111111001"
+        C_KIND_OF_INTR = "11111111111111111111111111111101"
         C_KIND_OF_EDGE = "11111111111111111111111111111111"
         C_KIND_OF_LVL = "11111111111111111111111111111111"
         C_HAS_IPR = 1
@@ -588,7 +588,7 @@ WARNING:Xst:647 - Input <Bus2ip_rdce<9:16>> is never used. This port will be pre
 WARNING:Xst:647 - Input <Bus2ip_wrce<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2ip_wrce<6:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2ip_wrce<8:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <Wr_data<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Wr_data<31:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Processor_ack> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Interrupt_address_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <mer_int<1>>.
@@ -599,7 +599,6 @@ WARNING:Xst:647 - Input <Interrupt_address_in> is never used. This port will be 
     Found 1-bit register for signal <sie<4>>.
     Found 1-bit register for signal <sie<5>>.
     Found 1-bit register for signal <sie<6>>.
-    Found 1-bit register for signal <sie<7>>.
     Found 1-bit register for signal <cie<0>>.
     Found 1-bit register for signal <cie<1>>.
     Found 1-bit register for signal <cie<2>>.
@@ -607,7 +606,6 @@ WARNING:Xst:647 - Input <Interrupt_address_in> is never used. This port will be 
     Found 1-bit register for signal <cie<4>>.
     Found 1-bit register for signal <cie<5>>.
     Found 1-bit register for signal <cie<6>>.
-    Found 1-bit register for signal <cie<7>>.
     Found 1-bit register for signal <iar<0>>.
     Found 1-bit register for signal <ier<0>>.
     Found 1-bit register for signal <isr<0>>.
@@ -629,30 +627,26 @@ WARNING:Xst:647 - Input <Interrupt_address_in> is never used. This port will be 
     Found 1-bit register for signal <iar<6>>.
     Found 1-bit register for signal <ier<6>>.
     Found 1-bit register for signal <isr<6>>.
-    Found 1-bit register for signal <iar<7>>.
-    Found 1-bit register for signal <ier<7>>.
-    Found 1-bit register for signal <isr<7>>.
     Found 32-bit register for signal <ipr>.
-    Found 4-bit register for signal <ivr>.
+    Found 3-bit register for signal <ivr>.
     Found 1-bit register for signal <intr_p1<0>>.
     Found 1-bit register for signal <INTR_DETECT_GEN[0].EDGE_DETECT_GEN.intr_p2<0>>.
     Found 1-bit register for signal <INTR_DETECT_GEN[0].EDGE_DETECT_GEN.intr_d1<0>>.
     Found 1-bit register for signal <hw_intr<0>>.
     Found 1-bit register for signal <hw_intr<1>>.
+    Found 1-bit register for signal <intr_p1<2>>.
+    Found 1-bit register for signal <INTR_DETECT_GEN[2].EDGE_DETECT_GEN.intr_p2<2>>.
+    Found 1-bit register for signal <INTR_DETECT_GEN[2].EDGE_DETECT_GEN.intr_d1<2>>.
     Found 1-bit register for signal <hw_intr<2>>.
-    Found 1-bit register for signal <intr_p1<3>>.
-    Found 1-bit register for signal <INTR_DETECT_GEN[3].EDGE_DETECT_GEN.intr_p2<3>>.
-    Found 1-bit register for signal <INTR_DETECT_GEN[3].EDGE_DETECT_GEN.intr_d1<3>>.
-    Found 1-bit register for signal <hw_intr<3>>.
     Found 1-bit register for signal <irq_gen>.
     Found 1-bit register for signal <Irq>.
     Found 1-bit register for signal <mer_0_sync>.
     Found 1-bit register for signal <intr_sync_0>.
-    Found 1-bit register for signal <intr_sync_3>.
-    Found 32-bit 7-to-1 multiplexer for signal <_n0325> created at line 2717.
+    Found 1-bit register for signal <intr_sync_2>.
+    Found 32-bit 7-to-1 multiplexer for signal <_n0297> created at line 2717.
     Summary:
-	inferred  92 D-type flip-flop(s).
-	inferred  14 Multiplexer(s).
+	inferred  85 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
 Unit <intc_core> synthesized.
 
 Synthesizing Unit <axi_lite_ipif>.
@@ -930,16 +924,18 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  4-bit adder                                           : 1
-# Registers                                            : 88
- 1-bit register                                        : 81
+# Registers                                            : 82
+ 1-bit register                                        : 75
  2-bit register                                        : 3
+ 3-bit register                                        : 1
  32-bit register                                       : 2
- 4-bit register                                        : 2
-# Multiplexers                                         : 35
- 1-bit 2-to-1 multiplexer                              : 23
+ 4-bit register                                        : 1
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 22
+ 3-bit 2-to-1 multiplexer                              : 6
  32-bit 2-to-1 multiplexer                             : 2
  32-bit 7-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 8
+ 4-bit 2-to-1 multiplexer                              : 1
  9-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 
@@ -949,7 +945,7 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:2404 -  FFs/Latches <ipr<31:8>> (without init value) have a constant value of 0 in block <intc_core>.
+WARNING:Xst:2404 -  FFs/Latches <ipr<31:7>> (without init value) have a constant value of 0 in block <intc_core>.
 
 Synthesizing (advanced) Unit <slave_attachment>.
 The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt>: 1 register on signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
@@ -961,13 +957,14 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 1
  4-bit up counter                                      : 1
-# Registers                                            : 131
- Flip-Flops                                            : 131
-# Multiplexers                                         : 17
- 1-bit 2-to-1 multiplexer                              : 5
+# Registers                                            : 123
+ Flip-Flops                                            : 123
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 4
+ 3-bit 2-to-1 multiplexer                              : 6
  32-bit 2-to-1 multiplexer                             : 2
  32-bit 7-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 8
+ 4-bit 2-to-1 multiplexer                              : 1
  9-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 
@@ -1000,9 +997,8 @@ Optimizing unit <address_decoder> ...
 
 Optimizing unit <intc_core> ...
 WARNING:Xst:2677 - Node <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <ublaze_microblaze_0_intc_wrapper>.
-INFO:Xst:2261 - The FF/Latch <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_31> in Unit <ublaze_microblaze_0_intc_wrapper> is equivalent to the following 23 FFs/Latches, which will be removed : <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_30> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_29> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_28> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_27> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_26> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_25> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_23> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_22> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_21> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_20>
-   <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_19> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_18> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_17> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_16> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_15> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_14> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_13> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_12> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_11> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_10> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_9> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_8> 
-INFO:Xst:3203 - The FF/Latch <microblaze_0_intc/INTC_CORE_I/ivr_3> in Unit <ublaze_microblaze_0_intc_wrapper> is the opposite to the following FF/Latch, which will be removed : <microblaze_0_intc/INTC_CORE_I/irq_gen> 
+INFO:Xst:2261 - The FF/Latch <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_31> in Unit <ublaze_microblaze_0_intc_wrapper> is equivalent to the following 24 FFs/Latches, which will be removed : <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_30> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_29> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_28> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_27> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_26> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_25> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_23> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_22> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_21> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_20>
+   <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_19> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_18> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_17> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_16> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_15> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_14> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_13> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_12> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_11> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_10> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_9> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_8> <microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_7> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -1015,8 +1011,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 111
- Flip-Flops                                            : 111
+# Registers                                            : 103
+ Flip-Flops                                            : 103
 
 =========================================================================
 
@@ -1039,22 +1035,22 @@ Top Level Output File Name         : ublaze_microblaze_0_intc_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 186
+# BELS                             : 170
 #      GND                         : 1
 #      INV                         : 2
-#      LUT2                        : 22
-#      LUT3                        : 21
-#      LUT4                        : 17
-#      LUT5                        : 55
-#      LUT6                        : 55
-#      MUXF7                       : 12
+#      LUT2                        : 20
+#      LUT3                        : 20
+#      LUT4                        : 16
+#      LUT5                        : 50
+#      LUT6                        : 51
+#      MUXF7                       : 9
 #      VCC                         : 1
-# FlipFlops/Latches                : 111
-#      FD                          : 34
+# FlipFlops/Latches                : 103
+#      FD                          : 31
 #      FDC                         : 2
-#      FDR                         : 42
-#      FDRE                        : 27
-#      FDS                         : 6
+#      FDR                         : 39
+#      FDRE                        : 26
+#      FDS                         : 5
 
 Device utilization summary:
 ---------------------------
@@ -1063,19 +1059,19 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             111  out of  11440     0%  
- Number of Slice LUTs:                  172  out of   5720     3%  
-    Number used as Logic:               172  out of   5720     3%  
+ Number of Slice Registers:             103  out of  11440     0%  
+ Number of Slice LUTs:                  159  out of   5720     2%  
+    Number used as Logic:               159  out of   5720     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    179
-   Number with an unused Flip Flop:      68  out of    179    37%  
-   Number with an unused LUT:             7  out of    179     3%  
-   Number of fully used LUT-FF pairs:   104  out of    179    58%  
-   Number of unique control sets:        21
+ Number of LUT Flip Flop pairs used:    166
+   Number with an unused Flip Flop:      63  out of    166    37%  
+   Number with an unused LUT:             7  out of    166     4%  
+   Number of fully used LUT-FF pairs:    96  out of    166    57%  
+   Number of unique control sets:        19
 
 IO Utilization: 
- Number of IOs:                         177
+ Number of IOs:                         176
  Number of bonded IOBs:                   0  out of    102     0%  
 
 Specific Feature Utilization:
@@ -1101,9 +1097,9 @@ Clock Information:
 -----------------------------------+------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                          | Load  |
 -----------------------------------+------------------------------------------------+-------+
-S_AXI_ACLK                         | NONE(microblaze_0_intc/ip2bus_rdack_int_d1)    | 108   |
+S_AXI_ACLK                         | NONE(microblaze_0_intc/ip2bus_rdack_int_d1)    | 100   |
+Intr<2>                            | NONE(microblaze_0_intc/INTC_CORE_I/intr_sync_2)| 1     |
 Intr<0>                            | NONE(microblaze_0_intc/INTC_CORE_I/intr_sync_0)| 1     |
-Intr<3>                            | NONE(microblaze_0_intc/INTC_CORE_I/intr_sync_3)| 1     |
 Processor_clk                      | NONE(microblaze_0_intc/INTC_CORE_I/Irq)        | 1     |
 -----------------------------------+------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1117,7 +1113,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 4.217ns (Maximum Frequency: 237.135MHz)
-   Minimum input arrival time before clock: 4.392ns
+   Minimum input arrival time before clock: 4.341ns
    Maximum output required time after clock: 1.723ns
    Maximum combinational path delay: No path found
 
@@ -1128,7 +1124,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
   Clock period: 4.217ns (frequency: 237.135MHz)
-  Total number of paths / destination ports: 677 / 191
+  Total number of paths / destination ports: 629 / 177
 -------------------------------------------------------------------------
 Delay:               4.217ns (Levels of Logic = 4)
   Source:            microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_15 (FF)
@@ -1142,7 +1138,7 @@ Delay:               4.217ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      FDRE:C->Q             2   0.525   1.181  microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_15 (microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_15)
      LUT6:I0->O            1   0.254   0.790  microblaze_0_intc/ip2bus_wrack_int<0>3 (microblaze_0_intc/ip2bus_wrack_int<0>2)
-     LUT6:I4->O            1   0.250   0.000  microblaze_0_intc/ip2bus_wrack_int<0>5_F (N81)
+     LUT6:I4->O            1   0.250   0.000  microblaze_0_intc/ip2bus_wrack_int<0>5_F (N70)
      MUXF7:I0->O           2   0.163   0.726  microblaze_0_intc/ip2bus_wrack_int<0>5 (microblaze_0_intc/ip2bus_wrack_int)
      LUT3:I2->O            1   0.254   0.000  microblaze_0_intc/ip2bus_wrack_rstpot (microblaze_0_intc/ip2bus_wrack_rstpot)
      FD:D                      0.074          microblaze_0_intc/ip2bus_wrack
@@ -1174,25 +1170,44 @@ Delay:               1.535ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 1011 / 162
+  Total number of paths / destination ports: 941 / 150
 -------------------------------------------------------------------------
-Offset:              4.392ns (Levels of Logic = 4)
+Offset:              4.341ns (Levels of Logic = 4)
   Source:            S_AXI_ARVALID (PAD)
-  Destination:       microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3 (FF)
+  Destination:       microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2 (FF)
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: S_AXI_ARVALID to microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3
+  Data Path: S_AXI_ARVALID to microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT3:I0->O           37   0.235   2.059  microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_bus2ip_addr_i41 (microblaze_0_intc/bus2ip_addr<3>)
-     LUT6:I0->O            1   0.254   0.000  microblaze_0_intc/INTC_CORE_I/Rd_data<18>2_SW6_SW0_G (N60)
-     MUXF7:I1->O           1   0.175   1.112  microblaze_0_intc/INTC_CORE_I/Rd_data<18>2_SW6_SW0 (N42)
-     LUT6:I1->O            1   0.254   0.000  microblaze_0_intc/INTC_CORE_I/Mmux_Rd_data302 (microblaze_0_intc/read_data<3>)
-     FDRE:D                    0.074          microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3
+     LUT3:I0->O           34   0.235   2.008  microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_bus2ip_addr_i41 (microblaze_0_intc/bus2ip_addr<3>)
+     LUT6:I0->O            1   0.254   0.000  microblaze_0_intc/INTC_CORE_I/Rd_data<18>2_SW6_SW0_G (N53)
+     MUXF7:I1->O           1   0.175   1.112  microblaze_0_intc/INTC_CORE_I/Rd_data<18>2_SW6_SW0 (N38)
+     LUT6:I1->O            1   0.254   0.000  microblaze_0_intc/INTC_CORE_I/Mmux_Rd_data262 (microblaze_0_intc/read_data<2>)
+     FDRE:D                    0.074          microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2
     ----------------------------------------
-    Total                      4.392ns (1.221ns logic, 3.171ns route)
-                                       (27.8% logic, 72.2% route)
+    Total                      4.341ns (1.221ns logic, 3.120ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Intr<2>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.583ns (Levels of Logic = 1)
+  Source:            S_AXI_ARESETN (PAD)
+  Destination:       microblaze_0_intc/INTC_CORE_I/intr_sync_2 (FF)
+  Destination Clock: Intr<2> rising
+
+  Data Path: S_AXI_ARESETN to microblaze_0_intc/INTC_CORE_I/intr_sync_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I0->O            3   0.250   0.765  microblaze_0_intc/INTC_CORE_I/Rst_n_iar[2]_OR_59_o1 (microblaze_0_intc/INTC_CORE_I/Rst_n_iar[2]_OR_59_o)
+     FDC:CLR                   0.459          microblaze_0_intc/INTC_CORE_I/intr_sync_2
+    ----------------------------------------
+    Total                      1.583ns (0.818ns logic, 0.765ns route)
+                                       (51.7% logic, 48.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Intr<0>'
@@ -1207,27 +1222,8 @@ Offset:              1.583ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT2:I0->O            3   0.250   0.765  microblaze_0_intc/INTC_CORE_I/Rst_n_iar[0]_OR_55_o1 (microblaze_0_intc/INTC_CORE_I/Rst_n_iar[0]_OR_55_o)
+     LUT2:I0->O            3   0.250   0.765  microblaze_0_intc/INTC_CORE_I/Rst_n_iar[0]_OR_53_o1 (microblaze_0_intc/INTC_CORE_I/Rst_n_iar[0]_OR_53_o)
      FDC:CLR                   0.459          microblaze_0_intc/INTC_CORE_I/intr_sync_0
-    ----------------------------------------
-    Total                      1.583ns (0.818ns logic, 0.765ns route)
-                                       (51.7% logic, 48.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Intr<3>'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              1.583ns (Levels of Logic = 1)
-  Source:            S_AXI_ARESETN (PAD)
-  Destination:       microblaze_0_intc/INTC_CORE_I/intr_sync_3 (FF)
-  Destination Clock: Intr<3> rising
-
-  Data Path: S_AXI_ARESETN to microblaze_0_intc/INTC_CORE_I/intr_sync_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LUT2:I0->O            3   0.250   0.765  microblaze_0_intc/INTC_CORE_I/Rst_n_iar[3]_OR_64_o1 (microblaze_0_intc/INTC_CORE_I/Rst_n_iar[3]_OR_64_o)
-     FDC:CLR                   0.459          microblaze_0_intc/INTC_CORE_I/intr_sync_3
     ----------------------------------------
     Total                      1.583ns (0.818ns logic, 0.765ns route)
                                        (51.7% logic, 48.3% route)
@@ -1245,7 +1241,7 @@ Offset:              1.395ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT2:I1->O            1   0.254   0.681  microblaze_0_intc/INTC_CORE_I/processor_rst_n_irq_gen_sync_OR_109_o1 (microblaze_0_intc/INTC_CORE_I/processor_rst_n_irq_gen_sync_OR_109_o)
+     LUT2:I1->O            1   0.254   0.681  microblaze_0_intc/INTC_CORE_I/processor_rst_n_irq_gen_sync_OR_99_o1 (microblaze_0_intc/INTC_CORE_I/processor_rst_n_irq_gen_sync_OR_99_o)
      FDR:R                     0.459          microblaze_0_intc/INTC_CORE_I/Irq
     ----------------------------------------
     Total                      1.395ns (0.714ns logic, 0.681ns route)
@@ -1301,7 +1297,7 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 S_AXI_ACLK     |    2.729|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock Intr<3>
+Clock to Setup on destination clock Intr<2>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -1315,7 +1311,7 @@ Clock to Setup on destination clock Processor_clk
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 Processor_clk  |    1.535|         |         |         |
-S_AXI_ACLK     |    2.827|         |         |         |
+S_AXI_ACLK     |    2.749|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock S_AXI_ACLK
@@ -1324,22 +1320,22 @@ Clock to Setup on destination clock S_AXI_ACLK
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 Intr<0>        |    1.280|         |         |         |
-Intr<3>        |    1.280|         |         |         |
+Intr<2>        |    1.280|         |         |         |
 S_AXI_ACLK     |    4.217|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 11.84 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.41 secs
  
 --> 
 
 
-Total memory usage is 517580 kilobytes
+Total memory usage is 517520 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   26 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

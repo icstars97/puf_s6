@@ -17,7 +17,7 @@ FPGA_ARCH = spartan6
 
 DEVICE = xc6slx9tqg144-2
 
-INTSTYLE = ise
+INTSTYLE = pa
 
 XPS_HDL_LANG = vhdl
 GLOBAL_SEARCHPATHOPT = 
@@ -72,8 +72,7 @@ implementation/ublaze_debug_module_wrapper.ngc \
 implementation/ublaze_clock_generator_0_wrapper.ngc \
 implementation/ublaze_axi4lite_0_wrapper.ngc \
 implementation/ublaze_rs232_wrapper.ngc \
-implementation/ublaze_generic_gpio_wrapper.ngc \
-implementation/ublaze_axi_timer_0_wrapper.ngc
+implementation/ublaze_generic_gpio_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

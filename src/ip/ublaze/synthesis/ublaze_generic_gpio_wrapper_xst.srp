@@ -5,7 +5,7 @@ Parameter TMPDIR set to /home/ise/ise_proj/puf_s6/src/ip/ublaze/synthesis/xst_te
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 
@@ -685,7 +685,6 @@ WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/
 
 Elaborating entity <GPIO_Core> (architecture <IMP>) with generics from library <axi_gpio_v1_01_b>.
 INFO:HDLCompiler:679 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_gpio_v1_01_b/hdl/vhdl/gpio_core.vhd" Line 554. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_gpio_v1_01_b/hdl/vhdl/axi_gpio.vhd" Line 505: Net <Bus2IP2_Data_i[8]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -707,7 +706,7 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
         C_S_AXI_ADDR_WIDTH = 9
         C_S_AXI_DATA_WIDTH = 32
         C_GPIO_WIDTH = 32
-        C_GPIO2_WIDTH = 8
+        C_GPIO2_WIDTH = 32
         C_ALL_INPUTS = 0
         C_ALL_INPUTS_2 = 0
         C_INTERRUPT_PRESENT = 1
@@ -724,7 +723,6 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_gpio_v1_01_b/hdl/vhdl/axi_gpio.vhd" line 712: Output port <Intr2Bus_Retry> of the instance <INTR_CTRLR_GEN.INTERRUPT_CONTROL_I> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_gpio_v1_01_b/hdl/vhdl/axi_gpio.vhd" line 712: Output port <Intr2Bus_ToutSup> of the instance <INTR_CTRLR_GEN.INTERRUPT_CONTROL_I> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <Bus2IP2_Data_i<8:31>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <ip2bus_rdack_i_D1>.
     Found 32-bit register for signal <ip2bus_data_i_D1>.
     Found 1-bit register for signal <bus2ip_reset>.
@@ -736,7 +734,6 @@ WARNING:Xst:653 - Signal <Bus2IP2_Data_i<8:31>> is used but never assigned. This
     Found 1-bit register for signal <ip2bus_wrack_i_D1>.
     Summary:
 	inferred  40 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
 Unit <axi_gpio> synthesized.
 
 Synthesizing Unit <axi_lite_ipif>.
@@ -1092,7 +1089,7 @@ Synthesizing Unit <GPIO_Core>.
         C_DW = 32
         C_AW = 9
         C_GPIO_WIDTH = 32
-        C_GPIO2_WIDTH = 8
+        C_GPIO2_WIDTH = 32
         C_MAX_GPIO_WIDTH = 32
         C_INTERRUPT_PRESENT = 1
         C_DOUT_DEFAULT = "00000000000000000000000000000000"
@@ -1137,6 +1134,30 @@ WARNING:Xst:647 - Input <BE_Reg> is never used. This port will be preserved and 
     Found 1-bit register for signal <GPIO_DBus_i<29>>.
     Found 1-bit register for signal <GPIO_DBus_i<30>>.
     Found 1-bit register for signal <GPIO_DBus_i<31>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<0>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<1>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<2>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<3>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<4>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<5>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<6>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<7>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<8>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<9>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<10>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<11>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<12>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<13>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<14>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<15>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<16>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<17>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<18>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<19>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<20>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<21>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<22>>.
+    Found 1-bit register for signal <Dual.GPIO2_DBus_i<23>>.
     Found 1-bit register for signal <Dual.GPIO2_DBus_i<24>>.
     Found 1-bit register for signal <Dual.GPIO2_DBus_i<25>>.
     Found 1-bit register for signal <Dual.GPIO2_DBus_i<26>>.
@@ -1148,21 +1169,21 @@ WARNING:Xst:647 - Input <BE_Reg> is never used. This port will be preserved and 
     Found 32-bit register for signal <gpio_io_i_d1>.
     Found 32-bit register for signal <gpio_io_i_d2>.
     Found 32-bit register for signal <gpio_Data_In>.
-    Found 8-bit register for signal <Dual.gpio2_io_i_d1>.
-    Found 8-bit register for signal <Dual.gpio2_io_i_d2>.
-    Found 8-bit register for signal <Dual.gpio2_Data_In>.
+    Found 32-bit register for signal <Dual.gpio2_io_i_d1>.
+    Found 32-bit register for signal <Dual.gpio2_io_i_d2>.
+    Found 32-bit register for signal <Dual.gpio2_Data_In>.
     Found 32-bit register for signal <gpio_Data_Out>.
     Found 32-bit register for signal <gpio_OE>.
-    Found 8-bit register for signal <Dual.gpio2_Data_Out>.
-    Found 8-bit register for signal <Dual.gpio2_OE>.
+    Found 32-bit register for signal <Dual.gpio2_Data_Out>.
+    Found 32-bit register for signal <Dual.gpio2_OE>.
     Found 32-bit register for signal <gpio_data_in_xor_reg>.
-    Found 8-bit register for signal <Dual.gpio2_data_in_xor_reg>.
+    Found 32-bit register for signal <Dual.gpio2_data_in_xor_reg>.
     Found 1-bit register for signal <GPIO_intr>.
     Found 1-bit register for signal <GPIO2_intr>.
     Found 1-bit register for signal <iGPIO_xferAck>.
     Summary:
-	inferred 284 D-type flip-flop(s).
-	inferred 103 Multiplexer(s).
+	inferred 452 D-type flip-flop(s).
+	inferred 199 Multiplexer(s).
 Unit <GPIO_Core> synthesized.
 
 =========================================================================
@@ -1171,23 +1192,20 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  4-bit adder                                           : 1
-# Registers                                            : 73
- 1-bit register                                        : 55
- 16-bit register                                       : 1
+# Registers                                            : 66
+ 1-bit register                                        : 47
  2-bit register                                        : 4
- 32-bit register                                       : 7
+ 32-bit register                                       : 12
  4-bit register                                        : 1
- 64-bit register                                       : 1
- 8-bit register                                        : 4
-# Multiplexers                                         : 135
- 1-bit 2-to-1 multiplexer                              : 129
- 32-bit 2-to-1 multiplexer                             : 5
+ 64-bit register                                       : 2
+# Multiplexers                                         : 230
+ 1-bit 2-to-1 multiplexer                              : 225
+ 32-bit 2-to-1 multiplexer                             : 4
  9-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 # Xors                                                 : 4
  1-bit xor2                                            : 2
- 32-bit xor2                                           : 1
- 8-bit xor2                                            : 1
+ 32-bit xor2                                           : 2
 
 =========================================================================
 
@@ -1206,17 +1224,16 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 1
  4-bit up counter                                      : 1
-# Registers                                            : 399
- Flip-Flops                                            : 399
-# Multiplexers                                         : 113
- 1-bit 2-to-1 multiplexer                              : 107
- 32-bit 2-to-1 multiplexer                             : 5
+# Registers                                            : 567
+ Flip-Flops                                            : 567
+# Multiplexers                                         : 208
+ 1-bit 2-to-1 multiplexer                              : 203
+ 32-bit 2-to-1 multiplexer                             : 4
  9-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 # Xors                                                 : 4
  1-bit xor2                                            : 2
- 32-bit xor2                                           : 1
- 8-bit xor2                                            : 1
+ 32-bit xor2                                           : 2
 
 =========================================================================
 
@@ -1258,8 +1275,8 @@ INFO:Xst:2261 - The FF/Latch <Generic_GPIO/bus2ip_reset> in Unit <ublaze_generic
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block ublaze_generic_gpio_wrapper, actual ratio is 10.
-FlipFlop Generic_GPIO/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0 has been replicated 5 time(s)
+Found area constraint ratio of 100 (+ 0) on block ublaze_generic_gpio_wrapper, actual ratio is 14.
+FlipFlop Generic_GPIO/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0 has been replicated 3 time(s)
 
 Final Macro Processing ...
 
@@ -1272,6 +1289,30 @@ Processing Unit <ublaze_generic_gpio_wrapper> :
 	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_5>.
 	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_6>.
 	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_7>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_8>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_9>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_10>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_11>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_12>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_13>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_14>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_15>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_16>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_17>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_18>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_19>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_20>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_21>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_22>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_23>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_24>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_25>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_26>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_27>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_28>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_29>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_30>.
+	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/Dual.gpio2_io_i_d2_31>.
 	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/gpio_io_i_d2_0>.
 	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/gpio_io_i_d2_1>.
 	Found 2-bit shift register for signal <Generic_GPIO/gpio_core_1/gpio_io_i_d2_2>.
@@ -1310,10 +1351,10 @@ Unit <ublaze_generic_gpio_wrapper> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 320
- Flip-Flops                                            : 320
-# Shift Registers                                      : 40
- 2-bit shift register                                  : 40
+# Registers                                            : 438
+ Flip-Flops                                            : 438
+# Shift Registers                                      : 64
+ 2-bit shift register                                  : 64
 
 =========================================================================
 
@@ -1336,24 +1377,24 @@ Top Level Output File Name         : ublaze_generic_gpio_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 349
+# BELS                             : 506
 #      GND                         : 1
 #      INV                         : 2
-#      LUT2                        : 48
-#      LUT3                        : 73
-#      LUT4                        : 11
-#      LUT5                        : 40
-#      LUT6                        : 173
+#      LUT2                        : 74
+#      LUT3                        : 138
+#      LUT4                        : 138
+#      LUT5                        : 8
+#      LUT6                        : 144
 #      VCC                         : 1
-# FlipFlops/Latches                : 360
-#      FD                          : 54
-#      FDE                         : 40
-#      FDR                         : 126
-#      FDRE                        : 96
+# FlipFlops/Latches                : 502
+#      FD                          : 70
+#      FDE                         : 64
+#      FDR                         : 182
+#      FDRE                        : 118
 #      FDS                         : 4
-#      FDSE                        : 40
-# Shift Registers                  : 40
-#      SRLC16E                     : 40
+#      FDSE                        : 64
+# Shift Registers                  : 64
+#      SRLC16E                     : 64
 
 Device utilization summary:
 ---------------------------
@@ -1362,21 +1403,21 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             360  out of  11440     3%  
- Number of Slice LUTs:                  387  out of   5720     6%  
-    Number used as Logic:               347  out of   5720     6%  
-    Number used as Memory:               40  out of   1440     2%  
-       Number used as SRL:               40
+ Number of Slice Registers:             502  out of  11440     4%  
+ Number of Slice LUTs:                  568  out of   5720     9%  
+    Number used as Logic:               504  out of   5720     8%  
+    Number used as Memory:               64  out of   1440     4%  
+       Number used as SRL:               64
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    463
-   Number with an unused Flip Flop:     103  out of    463    22%  
-   Number with an unused LUT:            76  out of    463    16%  
-   Number of fully used LUT-FF pairs:   284  out of    463    61%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:    666
+   Number with an unused Flip Flop:     164  out of    666    24%  
+   Number with an unused LUT:            98  out of    666    14%  
+   Number of fully used LUT-FF pairs:   404  out of    666    60%  
+   Number of unique control sets:         9
 
 IO Utilization: 
- Number of IOs:                         223
+ Number of IOs:                         295
  Number of bonded IOBs:                   0  out of    102     0%  
 
 Specific Feature Utilization:
@@ -1402,7 +1443,7 @@ Clock Information:
 -----------------------------------+--------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)          | Load  |
 -----------------------------------+--------------------------------+-------+
-S_AXI_ACLK                         | NONE(Generic_GPIO/IP2INTC_Irpt)| 400   |
+S_AXI_ACLK                         | NONE(Generic_GPIO/IP2INTC_Irpt)| 566   |
 -----------------------------------+--------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -1414,8 +1455,8 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.321ns (Maximum Frequency: 231.428MHz)
-   Minimum input arrival time before clock: 3.839ns
+   Minimum period: 4.112ns (Maximum Frequency: 243.212MHz)
+   Minimum input arrival time before clock: 3.152ns
    Maximum output required time after clock: 1.723ns
    Maximum combinational path delay: No path found
 
@@ -1425,52 +1466,49 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
-  Clock period: 4.321ns (frequency: 231.428MHz)
-  Total number of paths / destination ports: 1461 / 759
+  Clock period: 4.112ns (frequency: 243.212MHz)
+  Total number of paths / destination ports: 1889 / 1049
 -------------------------------------------------------------------------
-Delay:               4.321ns (Levels of Logic = 3)
-  Source:            Generic_GPIO/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_2 (FF)
-  Destination:       Generic_GPIO/gpio_core_1/gpio_OE_7 (FF)
+Delay:               4.112ns (Levels of Logic = 1)
+  Source:            Generic_GPIO/gpio_core_1/iGPIO_xferAck (FF)
+  Destination:       Generic_GPIO/gpio_core_1/Dual.GPIO2_DBus_i_0 (FF)
   Source Clock:      S_AXI_ACLK rising
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: Generic_GPIO/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_2 to Generic_GPIO/gpio_core_1/gpio_OE_7
+  Data Path: Generic_GPIO/gpio_core_1/iGPIO_xferAck to Generic_GPIO/gpio_core_1/Dual.GPIO2_DBus_i_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            12   0.525   1.069  Generic_GPIO/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_2 (Generic_GPIO/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0_2)
-     LUT4:I3->O           17   0.254   1.209  Generic_GPIO/bus2ip_cs[0]_bus2ip_addr[5]_AND_77_o1 (Generic_GPIO/bus2ip_cs[0]_bus2ip_addr[5]_AND_77_o)
-     LUT6:I5->O            1   0.254   0.682  Generic_GPIO/gpio_core_1/gpio_OE_7_dpot (Generic_GPIO/gpio_core_1/gpio_OE_7_dpot)
-     LUT3:I2->O            1   0.254   0.000  Generic_GPIO/gpio_core_1/gpio_OE_7_dpot1 (Generic_GPIO/gpio_core_1/gpio_OE_7_dpot1)
-     FDSE:D                    0.074          Generic_GPIO/gpio_core_1/gpio_OE_7
+     FDR:C->Q              5   0.525   0.949  Generic_GPIO/gpio_core_1/iGPIO_xferAck (Generic_GPIO/gpio_core_1/iGPIO_xferAck)
+     LUT4:I2->O           64   0.250   1.929  Generic_GPIO/gpio_core_1/Read_Reg_Rst1 (Generic_GPIO/gpio_core_1/Read_Reg_Rst)
+     FDR:R                     0.459          Generic_GPIO/gpio_core_1/GPIO_DBus_i_31
     ----------------------------------------
-    Total                      4.321ns (1.361ns logic, 2.960ns route)
-                                       (31.5% logic, 68.5% route)
+    Total                      4.112ns (1.234ns logic, 2.878ns route)
+                                       (30.0% logic, 70.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 1819 / 319
+  Total number of paths / destination ports: 2217 / 425
 -------------------------------------------------------------------------
-Offset:              3.839ns (Levels of Logic = 3)
+Offset:              3.152ns (Levels of Logic = 2)
   Source:            S_AXI_ARVALID (PAD)
-  Destination:       Generic_GPIO/gpio_core_1/Dual.GPIO2_DBus_i_31 (FF)
+  Destination:       Generic_GPIO/gpio_core_1/Dual.gpio2_OE_0 (FF)
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: S_AXI_ARVALID to Generic_GPIO/gpio_core_1/Dual.GPIO2_DBus_i_31
+  Data Path: S_AXI_ARVALID to Generic_GPIO/gpio_core_1/Dual.gpio2_OE_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT3:I0->O           24   0.235   1.835  Generic_GPIO/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_bus2ip_addr_i31 (Generic_GPIO/bus2ip_addr<6>)
-     LUT6:I0->O            1   0.254   0.958  Generic_GPIO/gpio_core_1/Mmux_Dual.Read_Reg2_In<0>1421 (Generic_GPIO/gpio_core_1/Dual.Read_Reg2_In<0>)
-     LUT5:I1->O            1   0.254   0.000  Generic_GPIO/gpio_core_1/Dual.GPIO2_DBus_i_24_rstpot (Generic_GPIO/gpio_core_1/Dual.GPIO2_DBus_i_24_rstpot)
-     FD:D                      0.074          Generic_GPIO/gpio_core_1/Dual.GPIO2_DBus_i_24
+     LUT5:I0->O           64   0.254   2.158  Generic_GPIO/gpio_core_1/Mmux_Dual.Read_Reg2_In<0>16411_rstpot (Generic_GPIO/gpio_core_1/Mmux_Dual.Read_Reg2_In<0>16411_rstpot)
+     LUT3:I0->O            1   0.235   0.000  Generic_GPIO/gpio_core_1/Dual.gpio2_Data_Out_31_dpot1 (Generic_GPIO/gpio_core_1/Dual.gpio2_Data_Out_31_dpot1)
+     FDRE:D                    0.074          Generic_GPIO/gpio_core_1/Dual.gpio2_Data_Out_31
     ----------------------------------------
-    Total                      3.839ns (1.046ns logic, 2.793ns route)
-                                       (27.2% logic, 72.8% route)
+    Total                      3.152ns (0.994ns logic, 2.158ns route)
+                                       (31.5% logic, 68.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 121 / 118
+  Total number of paths / destination ports: 169 / 166
 -------------------------------------------------------------------------
 Offset:              1.723ns (Levels of Logic = 1)
   Source:            Generic_GPIO/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3 (FF)
@@ -1497,21 +1535,21 @@ Clock to Setup on destination clock S_AXI_ACLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-S_AXI_ACLK     |    4.321|         |         |         |
+S_AXI_ACLK     |    4.112|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.46 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.83 secs
  
 --> 
 
 
-Total memory usage is 518052 kilobytes
+Total memory usage is 519340 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   37 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

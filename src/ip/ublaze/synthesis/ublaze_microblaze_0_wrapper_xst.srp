@@ -5,7 +5,7 @@ Parameter TMPDIR set to /home/ise/ise_proj/puf_s6/src/ip/ublaze/synthesis/xst_te
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 
@@ -7530,13 +7530,13 @@ DCACHE_FSL_OUT_CLK|    8.880|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 82.00 secs
-Total CPU time to Xst completion: 66.86 secs
+Total REAL time to Xst completion: 85.00 secs
+Total CPU time to Xst completion: 69.13 secs
  
 --> 
 
 
-Total memory usage is 621024 kilobytes
+Total memory usage is 620860 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 4664 (   0 filtered)

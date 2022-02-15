@@ -25,12 +25,9 @@
     </file>
     <file xil_pn:name="../src/hdl/impl/arbiter_puf.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
     </file>
     <file xil_pn:name="../src/constraints/arbiter_puf_pin.ucf" xil_pn:type="FILE_UCF">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="../src/constraints/arbiter_puf_place.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="arbiter_test.vhd" xil_pn:type="FILE_VHDL">
@@ -45,14 +42,24 @@
     </file>
     <file xil_pn:name="../src/ip/ublaze/ublaze.xmp" xil_pn:type="FILE_XPS">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="78"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
     </file>
     <file xil_pn:name="../src/hdl/impl/toplevel.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="86"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
     </file>
     <file xil_pn:name="../src/hdl/impl/ring_puf.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="106"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../src/hdl/impl/apuf_multi.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="94"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
+    </file>
+    <file xil_pn:name="../src/constraints/arbiter_puf_place_multi.ucf" xil_pn:type="FILE_UCF">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../src/constraints/arbiter_puf_place_single.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
   </files>
@@ -192,7 +199,7 @@
     <property xil_pn:name="Language" xil_pn:value="VHDL" xil_pn:valueState="default"/>
     <property xil_pn:name="Last Applied Goal" xil_pn:value="Balanced" xil_pn:valueState="default"/>
     <property xil_pn:name="Last Applied Strategy" xil_pn:value="Xilinx Default (unlocked)" xil_pn:valueState="default"/>
-    <property xil_pn:name="Last Selected UCF File" xil_pn:value="/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_place.ucf" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Last Selected UCF File" xil_pn:value="/home/ise/ise_proj/puf_s6/src/constraints/arbiter_puf_place_multi.ucf" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Last Unlock Status" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Launch SDK after Export" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Library for Verilog Sources" xil_pn:value="" xil_pn:valueState="default"/>
@@ -262,6 +269,7 @@
     <property xil_pn:name="Preferred Language" xil_pn:value="VHDL" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Produce Verbose Report" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Project Description" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Project Generator" xil_pn:value="ProjNav" xil_pn:valueState="default"/>
     <property xil_pn:name="Property Specification in Project File" xil_pn:value="Store all values" xil_pn:valueState="default"/>
     <property xil_pn:name="RAM Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="RAM Style" xil_pn:value="Auto" xil_pn:valueState="default"/>
@@ -387,7 +395,8 @@
 
   <bindings>
     <binding xil_pn:location="/toplevel" xil_pn:name="../src/constraints/arbiter_puf_pin.ucf"/>
-    <binding xil_pn:location="/toplevel" xil_pn:name="../src/constraints/arbiter_puf_place.ucf"/>
+    <binding xil_pn:location="/toplevel" xil_pn:name="../src/constraints/arbiter_puf_place_multi.ucf"/>
+    <binding xil_pn:location="/toplevel" xil_pn:name="../src/constraints/arbiter_puf_place_single.ucf"/>
   </bindings>
 
   <libraries/>

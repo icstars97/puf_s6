@@ -18,3 +18,77 @@
 16:48:01.692 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
 14:07:54.980 INFO  - System reset is completed. 
 14:07:57.342 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+08:53:38.000 INFO  - Processing command line option -hwspec /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/ublaze.xml. 
+08:53:39.705 INFO  - The hardware specification for project 'ublaze_hw_platform_0' is different from /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/ublaze.xml. 
+08:53:39.988 INFO  - Copied contents of /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/ublaze.xml into /ublaze_hw_platform_0/system.xml. 
+08:53:39.998 INFO  - Copied contents of /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/toplevel.bit into /ublaze_hw_platform_0/system.bit. 
+08:53:40.005 INFO  - Copied contents of /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/edkBmmFile_bd.bmm into /ublaze_hw_platform_0/system_bd.bmm. 
+08:53:40.437 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+08:53:42.210 INFO  - Updating hardware inferred compiler options for puf. 
+08:53:42.305 INFO  - Clearing existing target manager status. 
+10:17:23.133 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:25:12.577 INFO  - System reset is completed. 
+10:25:14.803 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:26:45.140 INFO  - FPGA configured successfully with bitstream "/home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform_0/download.bit" 
+10:26:53.680 INFO  - System reset is completed. 
+10:26:55.834 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:28:58.029 INFO  - System reset is completed. 
+10:29:00.080 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:30:11.478 INFO  - FPGA configured successfully with bitstream "/home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform_0/download.bit" 
+10:30:18.600 INFO  - System reset is completed. 
+10:30:20.668 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:31:50.056 INFO  - System reset is completed. 
+10:31:52.193 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:33:54.422 INFO  - System reset is completed. 
+10:33:56.490 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:34:20.186 INFO  - System reset is completed. 
+10:34:22.351 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:35:31.232 INFO  - System reset is completed. 
+10:35:33.322 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:36:45.596 INFO  - System reset is completed. 
+10:36:47.700 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:41:39.615 INFO  - System reset is completed. 
+10:41:41.869 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:45:51.948 INFO  - System reset is completed. 
+10:45:54.055 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:47:00.313 INFO  - System reset is completed. 
+10:47:02.353 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:50:22.584 INFO  - System reset is completed. 
+10:50:24.661 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+10:57:27.573 INFO  - System reset is completed. 
+10:57:29.586 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+11:51:33.136 INFO  - System reset is completed. 
+11:51:35.164 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+12:12:47.724 INFO  - System reset is completed. 
+12:12:50.005 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+12:16:05.066 INFO  - System reset is completed. 
+12:16:07.087 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+12:17:54.154 INFO  - System reset is completed. 
+12:17:56.406 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+12:59:30.373 INFO  - System reset is completed. 
+12:59:32.563 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+15:47:04.049 INFO  - System reset is completed. 
+15:47:06.207 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+15:47:36.260 INFO  - FPGA configured successfully with bitstream "/home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform_0/download.bit" 
+15:47:41.156 INFO  - System reset is completed. 
+15:47:42.258 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+15:51:10.409 INFO  - System reset is completed. 
+15:51:12.743 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+15:59:13.217 INFO  - System reset is completed. 
+15:59:15.289 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+16:04:36.620 INFO  - System reset is completed. 
+16:04:38.584 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+16:14:28.795 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+08:25:18.279 INFO  - FPGA configured successfully with bitstream "/home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform_0/download.bit" 
+08:25:25.614 INFO  - System reset is completed. 
+08:25:27.571 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+08:26:00.226 INFO  - System reset is completed. 
+08:26:02.258 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+08:37:23.692 INFO  - System reset is completed. 
+08:37:25.611 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
+09:47:12.771 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

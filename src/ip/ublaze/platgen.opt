@@ -3,7 +3,7 @@ xc6slx9tqg144-2
 -lang
 vhdl
 -intstyle
-ise
+pa
 -toplevel
 no
 -ti

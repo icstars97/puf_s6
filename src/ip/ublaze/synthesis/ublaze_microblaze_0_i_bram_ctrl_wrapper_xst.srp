@@ -5,7 +5,7 @@ Parameter TMPDIR set to /home/ise/ise_proj/puf_s6/src/ip/ublaze/synthesis/xst_te
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 
@@ -450,8 +450,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.10 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.04 secs
  
 --> 
 

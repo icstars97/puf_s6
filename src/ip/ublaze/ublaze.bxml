@@ -1,0 +1,154 @@
+
+<Root MajorVersion="0" MinorVersion="20" xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Compositefile.xsd">
+
+  <CompositeFile CanBeSetAsTop="false" CanDisplayChildGraph="false" CompositeFileTopName="ublaze" Part="xc6slx9tqg144-2">
+    <Description>A description of the composite file</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1644936036"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1644936036"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1644929349"/>
+    <Processor DefaultBootloopFile="sw/lib/microblaze/mb_bootloop_le.elf" Endian="LITTLE" Name="microblaze_0/microblaze_0"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <Description>A description for this file collection</Description>
+      <File Name="ublaze.mhs" Type="MHS">
+        <Description>This is MHS file</Description>
+        <Properties IsDisabled="false" IsEditable="true" IsTrackable="true" IsUserDisableable="false" IsVisible="true" Timestamp="1644935913"/>
+        <UsedIn Val="NONE"/>
+      </File>
+      <File Name="implementation/ublaze.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644936065"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze.bmm" Type="BMM">
+        <Description>This is BMM file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935981"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="hdl/ublaze.vhd" Type="VHDL">
+        <Description>This is VHDL file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="true" IsUserDisableable="false" IsVisible="true" Timestamp="1644935981"/>
+        <UsedIn Val="SYNTHESIS"/>
+      </File>
+      <File Name="implementation/ublaze_proc_sys_reset_0_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_intc_wrapper.ncf" Type="NCF">
+        <Description>This is NCF file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935978"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_intc_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935994"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_ilmb_wrapper.ncf" Type="NCF">
+        <Description>This is NCF file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644931069"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_ilmb_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_i_bram_ctrl_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_dlmb_wrapper.ncf" Type="NCF">
+        <Description>This is NCF file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644931069"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_dlmb_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_d_bram_ctrl_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_bram_block_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_wrapper.ncf" Type="NCF">
+        <Description>This is NCF file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644931069"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_microblaze_0_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_debug_module_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_clock_generator_0_wrapper.ncf" Type="NCF">
+        <Description>This is NCF file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935980"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_clock_generator_0_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644936031"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_axi4lite_0_wrapper.ncf" Type="NCF">
+        <Description>This is NCF file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935978"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_axi4lite_0_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644936038"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_rs232_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="implementation/ublaze_generic_gpio_wrapper.ngc" Type="NGC">
+        <Description>This is NGC file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="false" IsUserDisableable="false" IsVisible="true" Timestamp="1644935977"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="data/ublaze.ucf" Type="UCF">
+        <Description>This is UCF file</Description>
+        <Properties IsDisabled="false" IsEditable="true" IsTrackable="true" IsUserDisableable="false" IsVisible="true" Timestamp="1643109161"/>
+        <UsedIn Val="NONE"/>
+      </File>
+      <File Name="data/ublaze.ncf" Type="NCF">
+        <Description>This is NCF file</Description>
+        <Properties IsDisabled="false" IsEditable="false" IsTrackable="true" IsUserDisableable="false" IsVisible="false" Timestamp="1644940943"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+
+</Root>

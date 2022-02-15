@@ -55,7 +55,7 @@ begin
 					o_out1 => s_mux1,
 					o_out2 => s_mux2);
 					
-	d_trig_inst : fdre
+	d_trig_inst : FDRE
 		generic map(init => '0')
 		port map(d => s_mux1,
 					c => s_mux2,
