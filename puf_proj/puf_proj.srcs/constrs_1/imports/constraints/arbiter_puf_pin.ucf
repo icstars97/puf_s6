@@ -1,0 +1,9 @@
+
+NET "i_clk" LOC = P7;
+NET "i_clk" IOSTANDARD = LVCMOS33;
+NET "i_nrst" LOC = H13;
+NET "i_nrst" IOSTANDARD = LVCMOS33;
+NET "i_uart_rx" LOC = F16;
+NET "o_uart_tx" LOC = F15;
+NET "i_uart_rx" IOSTANDARD = LVCMOS33;
+NET "o_uart_tx" IOSTANDARD = LVCMOS33;

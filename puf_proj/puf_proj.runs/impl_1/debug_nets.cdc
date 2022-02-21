@@ -1,0 +1,26 @@
+#PlanAhead Signal Export Version 1.0
+Project.unit.dimension=1
+Project.icon.name=u_icon
+Project.icon.boundaryScanChain=1
+Project.unit<0>.name=cs_ila_0
+Project.unit<0>.type=ilapro
+Project.unit<0>.clockEdge=Rising
+Project.unit<0>.dataDepth=2048
+Project.unit<0>.triggerSequencerLevels=1
+Project.unit<0>.enableStorageQualification=true
+Project.unit<0>.clockChannel=i_clk_BUFGP
+Project.unit<0>.dataPortWidth=6
+Project.unit<0>.dataEqualsTrigger=false
+Project.unit<0>.dataChannel<0>=s_ublaze_io1[0]
+Project.unit<0>.dataChannel<1>=s_ublaze_io1[1]
+Project.unit<0>.dataChannel<2>=s_ublaze_io1[2]
+Project.unit<0>.dataChannel<3>=s_ublaze_io1[3]
+Project.unit<0>.dataChannel<4>=s_ublaze_io2_i[0]
+Project.unit<0>.dataChannel<5>=s_ublaze_io2_o
+Project.unit<0>.triggerPortCount=1
+Project.unit<0>.triggerMatchCount<0>=1
+Project.unit<0>.triggerMatchType<0><0>=1
+Project.unit<0>.triggerMatchCountWidth<0><0>=0
+Project.unit<0>.triggerPortWidth<0>=1
+Project.unit<0>.triggerPortIsData<0>=false
+Project.unit<0>.triggerChannel<0><0>=s_ublaze_io2_o

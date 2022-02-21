@@ -1,94 +1,160 @@
-16:19:57.213 INFO  - Processing command line option -hwspec /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/ublaze.xml. 
-16:58:16.036 INFO  - Processing command line option -hwspec /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/ublaze.xml. 
-15:11:33.073 INFO  - System reset is completed. 
-15:16:24.684 INFO  - System reset is completed. 
-15:17:36.705 INFO  - System reset is completed. 
-15:17:38.682 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-15:19:22.619 INFO  - System reset is completed. 
-15:19:24.591 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-15:28:05.206 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
-16:36:59.978 INFO  - System reset is completed. 
-16:37:02.070 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-16:39:07.206 INFO  - System reset is completed. 
-16:39:09.177 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-16:44:05.189 INFO  - System reset is completed. 
-16:44:07.249 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-16:47:10.613 INFO  - System reset is completed. 
-16:47:12.604 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-16:48:01.692 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
-14:07:54.980 INFO  - System reset is completed. 
-14:07:57.342 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-08:53:38.000 INFO  - Processing command line option -hwspec /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/ublaze.xml. 
-08:53:39.705 INFO  - The hardware specification for project 'ublaze_hw_platform_0' is different from /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/ublaze.xml. 
-08:53:39.988 INFO  - Copied contents of /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/ublaze.xml into /ublaze_hw_platform_0/system.xml. 
-08:53:39.998 INFO  - Copied contents of /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/toplevel.bit into /ublaze_hw_platform_0/system.bit. 
-08:53:40.005 INFO  - Copied contents of /home/ise/ise_proj/puf_s6/src/ip/ublaze/SDK/SDK_Export/hw/edkBmmFile_bd.bmm into /ublaze_hw_platform_0/system_bd.bmm. 
-08:53:40.437 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
-08:53:42.210 INFO  - Updating hardware inferred compiler options for puf. 
-08:53:42.305 INFO  - Clearing existing target manager status. 
-10:17:23.133 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+21:38:57.584 INFO  - Project 'hw_platform_0' created. You can now create BSPs and application projects targeting this hardware platform. 
+21:46:15.409 INFO  - Settings changed on project puf_bsp. Triggering a rebuild... 
+21:46:15.894 INFO  - Refreshed build settings on project puf 
+22:02:33.900 INFO  - Settings changed on project puf_bsp. Triggering a rebuild... 
+22:02:34.158 INFO  - Refreshed build settings on project puf 
+00:02:14.229 INFO  - Project hw_platform_0's source hardware specification located at I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+00:05:42.172 INFO  - Copied contents of I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0_sdk.xml into \hw_platform_0\system.xml. 
+00:05:42.185 INFO  - Copied contents of I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0.bmm into \hw_platform_0\system_bd.bmm. 
+00:05:42.318 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+00:05:45.084 INFO  - Updating hardware inferred compiler options for puf. 
+00:05:45.109 INFO  - Clearing existing target manager status. 
+00:11:05.514 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+00:16:18.971 INFO  - Project hw_platform_0's source hardware specification located at I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+00:18:58.950 INFO  - Copied contents of I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0_sdk.xml into \hw_platform_0\system.xml. 
+00:18:58.952 INFO  - Copied contents of I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0.bmm into \hw_platform_0\system_bd.bmm. 
+00:18:59.074 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+00:19:01.145 INFO  - Updating hardware inferred compiler options for puf. 
+00:19:01.174 INFO  - Clearing existing target manager status. 
+00:20:59.689 INFO  - Successfully generated I:\FPGA_projects\xise_projects\puf\edk\puf\src\lscript.ld. 
+00:20:59.690 INFO  - Applying linker script to all configurations of project puf. 
+00:20:59.690 INFO  - Setting rebuild state to true for all configurations of project puf. 
+00:27:27.815 INFO  - Project hw_platform_0's source hardware specification located at I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+00:29:55.796 INFO  - Copied contents of I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0_sdk.xml into \hw_platform_0\system.xml. 
+00:29:55.799 INFO  - Copied contents of I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0.bmm into \hw_platform_0\system_bd.bmm. 
+00:29:55.900 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+00:29:57.907 INFO  - Updating hardware inferred compiler options for puf. 
+00:29:57.943 INFO  - Clearing existing target manager status. 
+00:30:05.052 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:27:17.468 INFO  - Project hw_platform_0's source hardware specification located at I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:27:17.684 INFO  - Copied contents of I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0_sdk.xml into \hw_platform_0\system.xml. 
+10:27:17.687 INFO  - Copied contents of I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\microblaze_mcs_v1_4_0.bmm into \hw_platform_0\system_bd.bmm. 
+10:27:17.795 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:27:43.861 INFO  - Updating hardware inferred compiler options for puf. 
+10:27:43.913 INFO  - Clearing existing target manager status. 
+10:28:50.596 INFO  - Successfully generated I:\FPGA_projects\xise_projects\puf\edk\puf\src\lscript.ld. 
+10:28:50.597 INFO  - Applying linker script to all configurations of project puf. 
+10:28:50.598 INFO  - Setting rebuild state to true for all configurations of project puf. 
+10:31:48.238 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+10:44:20.578 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+10:45:25.761 INFO  - System reset is completed. 
+10:46:56.128 INFO  - Project puf_bsp was a BSP project. Please update references. 
+10:46:56.129 ERROR - SDK has detected that project puf_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+10:48:26.003 INFO  - Project 'puf_hw_platform' created. You can now create BSPs and application projects targeting this hardware platform. 
+10:56:55.108 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:02:50.408 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+11:06:17.353 INFO  - System reset is completed. 
+11:06:48.464 INFO  - System reset is completed. 
+11:14:02.225 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+11:21:57.529 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+11:23:29.234 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+11:23:40.772 INFO  - System reset is completed. 
+11:24:22.126 INFO  - System reset is completed. 
+11:24:50.414 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
 
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
 
-    Failed to Open JTAG Cable
-    Cable target is not connected to the host
- 
-10:25:12.577 INFO  - System reset is completed. 
-10:25:14.803 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:26:45.140 INFO  - FPGA configured successfully with bitstream "/home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform_0/download.bit" 
-10:26:53.680 INFO  - System reset is completed. 
-10:26:55.834 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:28:58.029 INFO  - System reset is completed. 
-10:29:00.080 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:30:11.478 INFO  - FPGA configured successfully with bitstream "/home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform_0/download.bit" 
-10:30:18.600 INFO  - System reset is completed. 
-10:30:20.668 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:31:50.056 INFO  - System reset is completed. 
-10:31:52.193 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:33:54.422 INFO  - System reset is completed. 
-10:33:56.490 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:34:20.186 INFO  - System reset is completed. 
-10:34:22.351 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:35:31.232 INFO  - System reset is completed. 
-10:35:33.322 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:36:45.596 INFO  - System reset is completed. 
-10:36:47.700 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:41:39.615 INFO  - System reset is completed. 
-10:41:41.869 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:45:51.948 INFO  - System reset is completed. 
-10:45:54.055 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:47:00.313 INFO  - System reset is completed. 
-10:47:02.353 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:50:22.584 INFO  - System reset is completed. 
-10:50:24.661 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-10:57:27.573 INFO  - System reset is completed. 
-10:57:29.586 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-11:51:33.136 INFO  - System reset is completed. 
-11:51:35.164 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-12:12:47.724 INFO  - System reset is completed. 
-12:12:50.005 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-12:16:05.066 INFO  - System reset is completed. 
-12:16:07.087 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-12:17:54.154 INFO  - System reset is completed. 
-12:17:56.406 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-12:59:30.373 INFO  - System reset is completed. 
-12:59:32.563 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-15:47:04.049 INFO  - System reset is completed. 
-15:47:06.207 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-15:47:36.260 INFO  - FPGA configured successfully with bitstream "/home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform_0/download.bit" 
-15:47:41.156 INFO  - System reset is completed. 
-15:47:42.258 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-15:51:10.409 INFO  - System reset is completed. 
-15:51:12.743 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-15:59:13.217 INFO  - System reset is completed. 
-15:59:15.289 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-16:04:36.620 INFO  - System reset is completed. 
-16:04:38.584 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-16:14:28.795 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
-08:25:18.279 INFO  - FPGA configured successfully with bitstream "/home/ise/ise_proj/puf_s6/edk/ublaze_hw_platform_0/download.bit" 
-08:25:25.614 INFO  - System reset is completed. 
-08:25:27.571 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-08:26:00.226 INFO  - System reset is completed. 
-08:26:02.258 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-08:37:23.692 INFO  - System reset is completed. 
-08:37:25.611 INFO  - Application is downloaded for microblaze_0. (/home/ise/ise_proj/puf_s6/edk/puf/Debug/puf.elf) 
-09:47:12.771 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:36:07.961 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+11:52:39.497 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+11:52:52.194 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+11:53:00.141 INFO  - System reset is completed. 
+11:55:06.391 INFO  - System reset is completed. 
+11:56:52.557 INFO  - System reset is completed. 
+12:10:45.306 INFO  - System reset is completed. 
+12:12:51.632 INFO  - System reset is completed. 
+12:14:32.533 INFO  - System reset is completed. 
+12:31:29.650 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:37:49.526 INFO  - System reset is completed. 
+12:55:18.463 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:13:11.617 INFO  - System reset is completed. 
+13:20:54.269 INFO  - System reset is completed. 
+13:26:13.674 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+13:31:45.281 INFO  - System reset is completed. 
+13:32:06.505 INFO  - System reset is completed. 
+13:34:30.199 INFO  - System reset is completed. 
+13:39:45.610 INFO  - System reset is completed. 
+13:51:46.201 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+14:00:04.655 INFO  - System reset is completed. 
+14:18:20.021 INFO  - System reset is completed. 
+14:19:16.632 INFO  - System reset is completed. 
+14:20:32.339 INFO  - System reset is completed. 
+14:27:45.596 INFO  - System reset is completed. 
+14:28:22.570 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+14:28:22.571 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+14:29:20.391 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+14:29:20.391 ERROR - Timeout occured while waiting to get reply for command "xdisconnect 0" 
+14:29:20.392 ERROR - Disconnect target failed. 
+14:29:20.392 ERROR - Unexpected error while issuing command {"command": "xdisconnect 0"} to XMD: java.net.SocketException: Connection reset by peer: socket write error 
+14:29:20.393 ERROR - Disconnect target failed. 
+14:36:41.266 ERROR - Unexpected error while issuing command {"command": "xfpga_isconfigured"} to XMD: java.net.SocketException: Connection reset by peer: socket write error 
+14:36:41.267 ERROR - Checking FPGA configuration failed.. 
+14:37:04.475 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+14:37:27.233 INFO  - System reset is completed. 
+15:06:19.228 INFO  - System reset is completed. 
+15:06:51.781 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Target is not responding (timed out).
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+15:07:02.178 INFO  - System reset is completed. 
+15:07:44.427 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+15:07:44.437 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:07:44.688 ERROR - Unexpected error while launching program. java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+15:09:30.966 INFO  - System reset is completed. 
+15:14:46.392 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+15:14:52.707 INFO  - System reset is completed. 
+15:16:36.076 INFO  - System reset is completed. 
+15:22:55.488 INFO  - System reset is completed. 
+15:24:46.016 INFO  - System reset is completed. 
+16:26:15.902 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+17:46:06.786 INFO  - System reset is completed. 
+17:49:53.363 INFO  - System reset is completed. 
+17:54:11.889 INFO  - System reset is completed. 
+18:16:52.246 INFO  - System reset is completed. 
+22:05:44.975 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:00:06.978 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+23:00:43.013 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/puf' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:521)
+
+23:00:54.580 INFO  - System reset is completed. 
+23:01:24.298 INFO  - System reset is completed. 
+23:01:26.747 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 4.\nError accessing memory address 0x184: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+23:01:56.524 INFO  - System reset is completed. 
+23:02:09.793 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:02:44.636 INFO  - System reset is completed. 
+23:06:14.971 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+23:06:24.300 INFO  - System reset is completed. 
+23:07:20.089 INFO  - System reset is completed. 
+23:09:27.926 INFO  - System reset is completed. 
+23:11:04.485 INFO  - System reset is completed. 
+23:23:51.868 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+23:36:27.815 INFO  - FPGA configured successfully with bitstream "I:/FPGA_projects/xise_projects/puf/edk/puf_hw_platform/download.bit" 
+00:05:16.719 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

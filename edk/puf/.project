@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>puf</name>
-	<comment>puf_bsp - microblaze_0</comment>
+	<comment>puf_bsp - microblaze_mcs_v1_4_0</comment>
 	<projects>
 		<project>puf_bsp</project>
 	</projects>

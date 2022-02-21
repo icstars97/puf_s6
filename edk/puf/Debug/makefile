@@ -38,7 +38,7 @@ all: puf.elf secondary-outputs
 puf.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MicroBlaze gcc linker'
-	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../puf_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "puf.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../puf_bsp/microblaze_mcs_v1_4_0/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "puf.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -50,7 +50,7 @@ puf.elf.size: puf.elf
 
 puf.elf.elfcheck: puf.elf
 	@echo 'Invoking: Xilinx ELF Check'
-	elfcheck puf.elf -hw ../../ublaze_hw_platform_0/system.xml -pe microblaze_0  |tee "puf.elf.elfcheck"
+	elfcheck puf.elf -hw ../../puf_hw_platform/system.xml -pe microblaze_mcs_v1_4_0  |tee "puf.elf.elfcheck"
 	@echo 'Finished building: $@'
 	@echo ' '
 

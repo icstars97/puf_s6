@@ -9,14 +9,15 @@
 #define MAIN_H_
 
 #include "xparameters.h"
-#include "xgpio.h"
+#include "xiomodule.h"
 #include "xstatus.h"
-#include "xuartlite.h"
+
 
 #define CHALLENGE_WIDTH 16
-#define WORD_NUMBER (1<<CHALLENGE_WIDTH)>>3
+#define CHALLENGE_COUNT 1 << CHALLENGE_WIDTH
 
-int platform_init(void);
-void get_response(u32 scan_delay, u8 challenge_width);
+
+void platform_init(void);
+void get_response(u32 scan_delay);
 void sleep(u32 sleep_ticks);
 #endif /* MAIN_H_ */
