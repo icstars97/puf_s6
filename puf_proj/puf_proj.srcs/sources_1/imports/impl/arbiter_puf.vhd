@@ -42,9 +42,11 @@ architecture rtl of arbiter_puf is
 	
 	signal s_mux1 : std_logic;
 	signal s_mux2 : std_logic;
-	
+	signal s_and : std_logic;
 	attribute keep_hierarchy : string;
 	attribute keep_hierarchy of rtl : architecture is "yes";
+	attribute keep_hierarchy of s_and : signal is "yes";
+	
 --	
 begin
 
@@ -54,10 +56,12 @@ begin
 					i_ch => i_challenge_arb,
 					o_out1 => s_mux1,
 					o_out2 => s_mux2);
-					
+    
+    s_and <=  s_mux1 and '1';	
+    					
 	d_trig_inst : FDRE
 		generic map(init => '0')
-		port map(d => s_mux1,
+		port map(d => s_and,
 					c => s_mux2,
 					ce => '1',
 					r => '0',

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="xdl" Owner="Андрей" Host="PAPACARLO" Pid="13712">
+    <Process Command="xdl" Owner="ise" Host="localhost.localdomain" Pid="9246">
     </Process>
 </ProcessHandle>

@@ -1,0 +1,9 @@
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../puf_platform/system.xml -pe
+microblaze_mcs_v1_4_0 puf_multi.elf 
+
+ELF file	: puf_multi.elf
+elfcheck passed.

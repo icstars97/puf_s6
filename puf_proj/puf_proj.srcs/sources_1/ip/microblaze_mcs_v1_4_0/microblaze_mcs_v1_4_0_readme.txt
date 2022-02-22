@@ -1,5 +1,5 @@
 The following files were generated for 'microblaze_mcs_v1_4_0' in directory
-I:\FPGA_projects\xise_projects\puf\puf_proj\puf_proj.srcs\sources_1\ip\microblaze_mcs_v1_4_0\
+/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/
 
 Generate XCO file:
    CORE Generator input file containing the parameters used to generate a core.

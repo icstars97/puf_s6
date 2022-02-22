@@ -1,4 +1,4 @@
-# Date: Fri Feb 18 07:20:07 2022
+# Date: Tue Feb 22 12:24:52 2022
 
 SET addpads = false
 SET asysymbol = true
@@ -17,6 +17,6 @@ SET simulationfiles = Behavioral
 SET speedgrade = -2
 SET verilogsim = false
 SET vhdlsim = true
-SET workingdirectory = .\tmp\
+SET workingdirectory = ./tmp/
 
-# CRC: dac93ede
+# CRC: adb78447

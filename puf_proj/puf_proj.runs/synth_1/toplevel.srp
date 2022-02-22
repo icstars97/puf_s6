@@ -1,0 +1,818 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: toplevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "toplevel.prj"
+
+---- Target Parameters
+Target Device                      : xc6slx25ftg256-2
+Output File Name                   : "toplevel.ngc"
+
+---- Source Options
+Top Module Name                    : toplevel
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+---- Other Options
+Cores Search Directories           : {../../puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/mux.vhd" into library work
+Parsing entity <mux>.
+Parsing architecture <behavioral> of entity <mux>.
+Parsing architecture <clb_prim_f7> of entity <mux>.
+Parsing architecture <clb_prim_f8> of entity <mux>.
+Parsing VHDL file "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/mux_array.vhd" into library work
+Parsing entity <mux_array>.
+Parsing architecture <rtl> of entity <mux_array>.
+Parsing VHDL file "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/arbiter_puf.vhd" into library work
+Parsing entity <arbiter_puf>.
+Parsing architecture <rtl> of entity <arbiter_puf>.
+Parsing VHDL file "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/microblaze_mcs_v1_4_0.vhd" into library work
+Parsing VHDL file "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/apuf_multi.vhd" into library work
+Parsing entity <apuf_multi>.
+Parsing architecture <rtl> of entity <apuf_multi>.
+Parsing VHDL file "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/toplevel.vhd" into library work
+Parsing entity <toplevel>.
+Parsing architecture <multi_apuf> of entity <toplevel>.
+WARNING:HDLCompiler:946 - "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/toplevel.vhd" Line 66: Actual for formal port reset is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <toplevel> (architecture <multi_apuf>) from library <work>.
+WARNING:HDLCompiler:89 - "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/toplevel.vhd" Line 48: <microblaze_mcs_v1_4_0> remains a black-box since it has no binding entity.
+
+Elaborating entity <apuf_multi> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <arbiter_puf> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <mux_array> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <mux> (architecture <clb_prim_f7>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <toplevel>.
+    Related source file is "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/toplevel.vhd".
+INFO:Xst:3210 - "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/toplevel.vhd" line 62: Output port <gpi1_interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <toplevel> synthesized.
+
+Synthesizing Unit <apuf_multi>.
+    Related source file is "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/apuf_multi.vhd".
+        challenge_width = 16
+        response_width = 8
+    Summary:
+	no macro.
+Unit <apuf_multi> synthesized.
+
+Synthesizing Unit <arbiter_puf>.
+    Related source file is "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/arbiter_puf.vhd".
+        puf_length = 16
+    Set property "KEEP_HIERARCHY = YES".
+WARNING:Xst:3136 - Property "keep_hierarchy" (value "yes") has not been applied on proper HDL object.
+    Summary:
+	no macro.
+Unit <arbiter_puf> synthesized.
+
+Synthesizing Unit <mux_array>.
+    Related source file is "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/mux_array.vhd".
+        arr_length = 16
+    Set property "KEEP_HIERARCHY = YES".
+    Summary:
+	no macro.
+Unit <mux_array> synthesized.
+
+Synthesizing Unit <mux>.
+    Related source file is "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/imports/impl/mux.vhd".
+    Summary:
+	no macro.
+Unit <mux> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../../puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/microblaze_mcs_v1_4_0.ngc>.
+Loading core <microblaze_mcs_v1_4_0> for timing and area information for instance <mcs_0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <arbiter_puf> ...
+
+Optimizing unit <mux_array> ...
+
+Optimizing unit <mux> ...
+
+Optimizing unit <toplevel> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block toplevel, actual ratio is 6.
+WARNING:Xst:387 - The KEEP property attached to the net <mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n> may hinder timing optimization.
+   You may achieve better results by removing this property
+INFO:Xst:2260 - The FF/Latch <U0/ilmb/POR_FF_I> in Unit <mcs_0> is equivalent to the following FF/Latch : <U0/dlmb/POR_FF_I> 
+INFO:Xst:2260 - The FF/Latch <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i> in Unit <mcs_0> is equivalent to the following 31 FFs/Latches : <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[7].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[2].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[1].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i> 
+INFO:Xst:2260 - The FF/Latch <U0/ilmb/POR_FF_I> in Unit <mcs_0> is equivalent to the following FF/Latch : <U0/dlmb/POR_FF_I> 
+INFO:Xst:2260 - The FF/Latch <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i> in Unit <mcs_0> is equivalent to the following 31 FFs/Latches : <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[7].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[2].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[1].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : toplevel.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1579
+#      GND                         : 17
+#      INV                         : 24
+#      LUT1                        : 12
+#      LUT2                        : 64
+#      LUT3                        : 92
+#      LUT4                        : 244
+#      LUT5                        : 73
+#      LUT6                        : 168
+#      LUT6_2                      : 106
+#      MULT_AND                    : 3
+#      MUXCY                       : 16
+#      MUXCY_L                     : 89
+#      MUXF5                       : 66
+#      MUXF6                       : 1
+#      MUXF7                       : 512
+#      VCC                         : 17
+#      XORCY                       : 75
+# FlipFlops/Latches                : 759
+#      FD                          : 160
+#      FDC                         : 19
+#      FDC_1                       : 5
+#      FDCE                        : 15
+#      FDE                         : 194
+#      FDE_1                       : 8
+#      FDP                         : 5
+#      FDR                         : 117
+#      FDRE                        : 208
+#      FDRE_1                      : 1
+#      FDS                         : 10
+#      FDSE                        : 17
+# RAMS                             : 72
+#      RAM32X1D                    : 64
+#      RAMB16BWER                  : 8
+# Shift Registers                  : 92
+#      SRL16E                      : 81
+#      SRLC16E                     : 11
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+# Others                           : 1
+#      BSCAN_SPARTAN6              : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx25ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             759  out of  30064     2%  
+ Number of Slice LUTs:                 1003  out of  15032     6%  
+    Number used as Logic:               783  out of  15032     5%  
+    Number used as Memory:              220  out of   3664     6%  
+       Number used as RAM:              128
+       Number used as SRL:               92
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1424
+   Number with an unused Flip Flop:     665  out of   1424    46%  
+   Number with an unused LUT:           421  out of   1424    29%  
+   Number of fully used LUT-FF pairs:   338  out of   1424    23%  
+   Number of unique control sets:        78
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    186     2%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                8  out of     52    15%  
+    Number using Block RAM only:          8
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                               | Clock buffer(FF name)                                                                                        | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+-------+
+i_clk                                                                                                                                                                      | BUFGP                                                                                                        | 624   |
+mcs_0/U0/Debug.mdm_0/drck_i                                                                                                                                                | BUFG                                                                                                         | 209   |
+mcs_0/U0/Debug.mdm_0/update                                                                                                                                                | NONE(mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/command_reg_0)| 40    |
+mcs_0/gpi1_interrupt                                                                                                                                                       | NONE(mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[31].PLBv46_rdBus_FDRE)              | 34    |
+apuf_multi_inst_1/apuf_array[7].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_1/apuf_array[7].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_1/apuf_array[7].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_1/apuf_array[6].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_1/apuf_array[6].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_1/apuf_array[6].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_1/apuf_array[5].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_1/apuf_array[5].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_1/apuf_array[5].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_1/apuf_array[4].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_1/apuf_array[4].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_1/apuf_array[4].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_1/apuf_array[3].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_1/apuf_array[3].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_1/apuf_array[3].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_1/apuf_array[2].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_1/apuf_array[2].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_1/apuf_array[2].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_1/apuf_array[1].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_1/apuf_array[1].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_1/apuf_array[1].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_1/apuf_array[0].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_1/apuf_array[0].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_1/apuf_array[0].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_2/apuf_array[7].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_2/apuf_array[7].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_2/apuf_array[7].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_2/apuf_array[6].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_2/apuf_array[6].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_2/apuf_array[6].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_2/apuf_array[5].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_2/apuf_array[5].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_2/apuf_array[5].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_2/apuf_array[4].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_2/apuf_array[4].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_2/apuf_array[4].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_2/apuf_array[3].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_2/apuf_array[3].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_2/apuf_array[3].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_2/apuf_array[2].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_2/apuf_array[2].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_2/apuf_array[2].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_2/apuf_array[1].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_2/apuf_array[1].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_2/apuf_array[1].apuf_instance/d_trig_inst)                                           | 1     |
+apuf_multi_inst_2/apuf_array[0].apuf_instance/mux_array_inst/o_out2(apuf_multi_inst_2/apuf_array[0].apuf_instance/mux_array_inst/array_gen[15].mux_instance_odd/mux_inst:O)| NONE(*)(apuf_multi_inst_2/apuf_array[0].apuf_instance/d_trig_inst)                                           | 1     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+-------+
+(*) These 16 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 9.866ns (Maximum Frequency: 101.358MHz)
+   Minimum input arrival time before clock: 8.640ns
+   Maximum output required time after clock: 7.719ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_clk'
+  Clock period: 9.519ns (frequency: 105.058MHz)
+  Total number of paths / destination ports: 94183 / 2294
+-------------------------------------------------------------------------
+Delay:               9.519ns (Levels of Logic = 5)
+  Source:            mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I (FF)
+  Destination:       mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op2_DFF (FF)
+  Source Clock:      i_clk rising
+  Destination Clock: i_clk rising
+
+  Data Path: mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I to mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op2_DFF
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             47   0.525   1.770  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I (U0/microblaze_I/MicroBlaze_Core_I/Area.buffer_Addr<1>)
+     SRL16E:A2->Q         25   0.254   1.631  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[1].SRL16E_I/Use_unisim.MB_SRL16E_I1 (U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/instr_OF<1>)
+     LUT3:I0->O           12   0.235   1.345  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/OF_brki_0x1811 (U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/OF_brki_0x181)
+     LUT6:I2->O           26   0.254   1.528  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/OpSel2_Imm (U0/microblaze_I/MicroBlaze_Core_I/Area.opsel2_Imm)
+     LUT2:I0->O            8   0.250   1.399  U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Mmux_op2_I1_SW0 (N20)
+     LUT6:I0->O            1   0.254   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Mmux_op2_I1 (U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/op2_I)
+     FDE:D                     0.074          U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op2_DFF
+    ----------------------------------------
+    Total                      9.519ns (1.846ns logic, 7.673ns route)
+                                       (19.4% logic, 80.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mcs_0/U0/Debug.mdm_0/drck_i'
+  Clock period: 8.185ns (frequency: 122.175MHz)
+  Total number of paths / destination ports: 345 / 249
+-------------------------------------------------------------------------
+Delay:               4.093ns (Levels of Logic = 10)
+  Source:            mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (FF)
+  Destination:       mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count_7 (FF)
+  Source Clock:      mcs_0/U0/Debug.mdm_0/drck_i falling
+  Destination Clock: mcs_0/U0/Debug.mdm_0/drck_i rising
+
+  Data Path: mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE to mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE_1:C->Q           1   0.525   1.112  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/sync)
+     LUT6:I1->O           17   0.254   1.317  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data1 (U0/microblaze_0_mdm_bus_Dbg_Shift)
+     LUT2:I0->O            1   0.250   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_lut<0> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<0> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<1> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<2> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<3> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<4> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<5> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<6> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<6>)
+     XORCY:CI->O           1   0.206   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_xor<7> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count7)
+     FD:D                      0.074          U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count_7
+    ----------------------------------------
+    Total                      4.093ns (1.664ns logic, 2.429ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mcs_0/U0/Debug.mdm_0/update'
+  Clock period: 9.866ns (frequency: 101.358MHz)
+  Total number of paths / destination ports: 251 / 49
+-------------------------------------------------------------------------
+Delay:               4.933ns (Levels of Logic = 2)
+  Source:            mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/force_stop_TClk (FF)
+  Source Clock:      mcs_0/U0/Debug.mdm_0/update falling
+  Destination Clock: mcs_0/U0/Debug.mdm_0/update rising
+
+  Data Path: mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I to mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/force_stop_TClk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           15   0.525   1.610  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
+     LUT6:I0->O            4   0.254   1.032  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mmux_GND_164_o_PWR_65_o_MUX_4604_o111 (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mmux_GND_164_o_PWR_65_o_MUX_4604_o11)
+     LUT5:I2->O            9   0.235   0.975  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Control_Reg_En<0>1 (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Control_Reg_En)
+     FDCE:CE                   0.302          U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/single_Step_TClk
+    ----------------------------------------
+    Total                      4.933ns (1.316ns logic, 3.617ns route)
+                                       (26.7% logic, 73.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mcs_0/gpi1_interrupt'
+  Clock period: 2.329ns (frequency: 429.461MHz)
+  Total number of paths / destination ports: 137 / 81
+-------------------------------------------------------------------------
+Delay:               2.329ns (Levels of Logic = 5)
+  Source:            mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[0].FDRE_I (FF)
+  Destination:       mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[3].FDRE_I (FF)
+  Source Clock:      mcs_0/gpi1_interrupt rising
+  Destination Clock: mcs_0/gpi1_interrupt rising
+
+  Data Path: mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[0].FDRE_I to mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[3].FDRE_I
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.525   1.008  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[0].FDRE_I (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr<0>)
+     LUT1:I0->O            1   0.254   0.000  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[0].Used_MuxCY.MUXCY_L_I_rt (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[0].Used_MuxCY.MUXCY_L_I_rt)
+     MUXCY_L:S->LO         1   0.215   0.000  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[0].Used_MuxCY.MUXCY_L_I (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/addr_cy<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[1].Used_MuxCY.MUXCY_L_I (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/addr_cy<2>)
+     MUXCY_L:CI->LO        0   0.023   0.000  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[2].Used_MuxCY.MUXCY_L_I (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/addr_cy<3>)
+     XORCY:CI->O           1   0.206   0.000  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[3].XORCY_I (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/sum_A<3>)
+     FDRE:D                    0.074          U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.RX_FIFO_I/Addr_Counters[3].FDRE_I
+    ----------------------------------------
+    Total                      2.329ns (1.321ns logic, 1.008ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.274ns (Levels of Logic = 4)
+  Source:            i_nrst (PAD)
+  Destination:       mcs_0/U0/filter_reset.reset_vec_0 (FF)
+  Destination Clock: i_clk rising
+
+  Data Path: i_nrst to mcs_0/U0/filter_reset.reset_vec_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  i_nrst_IBUF (i_nrst_IBUF)
+     INV:I->O              1   0.255   0.682  i_nrst_INV_2_o1_INV_0 (i_nrst_INV_2_o)
+     begin scope: 'mcs_0:reset'
+     LUT2:I1->O            1   0.254   0.000  U0/Debug_SYS_Rst_Reset_OR_1_o1 (U0/Debug_SYS_Rst_Reset_OR_1_o)
+     FD:D                      0.074          U0/filter_reset.reset_vec_0
+    ----------------------------------------
+    Total                      3.274ns (1.911ns logic, 1.363ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mcs_0/U0/Debug.mdm_0/drck_i'
+  Total number of paths / destination ports: 182 / 126
+-------------------------------------------------------------------------
+Offset:              3.752ns (Levels of Logic = 10)
+  Source:            mcs_0/U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:SHIFT (PAD)
+  Destination:       mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count_7 (FF)
+  Destination Clock: mcs_0/U0/Debug.mdm_0/drck_i rising
+
+  Data Path: mcs_0/U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:SHIFT to mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    5   0.000   1.296  U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I (U0/Debug.mdm_0/shift)
+     LUT6:I0->O           17   0.254   1.317  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data1 (U0/microblaze_0_mdm_bus_Dbg_Shift)
+     LUT2:I0->O            1   0.250   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_lut<0> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<0> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<1> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<2> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<3> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<4> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<5> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<6> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_cy<6>)
+     XORCY:CI->O           1   0.206   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count_xor<7> (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mcount_shift_count7)
+     FD:D                      0.074          U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count_7
+    ----------------------------------------
+    Total                      3.752ns (1.139ns logic, 2.613ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mcs_0/U0/Debug.mdm_0/update'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              8.640ns (Levels of Logic = 6)
+  Source:            mcs_0/U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:SEL (PAD)
+  Destination:       mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination Clock: mcs_0/U0/Debug.mdm_0/update falling
+
+  Data Path: mcs_0/U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:SEL to mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SEL     7   0.000   1.186  U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I (U0/Debug.mdm_0/sel)
+     LUT5:I1->O            1   0.254   0.958  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/_n01281 (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/_n0128)
+     LUT4:I0->O            1   0.254   0.958  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].LUT_Delay (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n)
+     LUT4:I0->O            1   0.254   0.958  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].LUT_Delay (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].local_sel_n)
+     LUT4:I0->O            1   0.254   0.958  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].LUT_Delay (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].local_sel_n)
+     LUT4:I0->O            1   0.254   0.958  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].LUT_Delay (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n)
+     LUT4:I0->O            1   0.254   0.681  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n)
+     FDC_1:CLR                 0.459          U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
+    ----------------------------------------
+    Total                      8.640ns (1.983ns logic, 6.657ns route)
+                                       (23.0% logic, 77.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 2)
+  Source:            mcs_0/U0/iomodule_0/IOModule_Core_I1/Using_UART_TX.UART_TX_I1/TX (FF)
+  Destination:       o_uart_tx (PAD)
+  Source Clock:      i_clk rising
+
+  Data Path: mcs_0/U0/iomodule_0/IOModule_Core_I1/Using_UART_TX.UART_TX_I1/TX to o_uart_tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.525   0.681  U0/iomodule_0/IOModule_Core_I1/Using_UART_TX.UART_TX_I1/TX (uart_tx)
+     end scope: 'mcs_0:uart_tx'
+     OBUF:I->O                 2.912          o_uart_tx_OBUF (o_uart_tx)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mcs_0/U0/Debug.mdm_0/update'
+  Total number of paths / destination ports: 40 / 1
+-------------------------------------------------------------------------
+Offset:              5.561ns (Levels of Logic = 4)
+  Source:            mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/command_5 (FF)
+  Destination:       mcs_0/U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
+  Source Clock:      mcs_0/U0/Debug.mdm_0/update falling
+
+  Data Path: mcs_0/U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/command_5 to mcs_0/U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q           14   0.525   1.557  U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/command_5 (U0/Debug.mdm_0/MDM_Core_I1/JTAG_CONTROL_I/command<5>)
+     LUT5:I0->O            1   0.254   0.910  U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i15 (U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i14)
+     LUT5:I2->O            1   0.235   0.790  U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i17_SW0 (N102)
+     LUT6:I4->O            1   0.250   0.790  U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i17 (U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i16)
+     LUT6:I4->O            0   0.250   0.000  U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i139 (U0/Debug.mdm_0/tdo)
+    BSCAN_SPARTAN6:TDO         0.000          U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I
+    ----------------------------------------
+    Total                      5.561ns (1.514ns logic, 4.047ns route)
+                                       (27.2% logic, 72.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mcs_0/U0/Debug.mdm_0/drck_i'
+  Total number of paths / destination ports: 213 / 1
+-------------------------------------------------------------------------
+Offset:              7.719ns (Levels of Logic = 5)
+  Source:            mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count_2 (FF)
+  Destination:       mcs_0/U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
+  Source Clock:      mcs_0/U0/Debug.mdm_0/drck_i rising
+
+  Data Path: mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count_2 to mcs_0/U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              28   0.525   1.681  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count_2 (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/shift_count<2>)
+     LUT3:I0->O            4   0.235   1.234  U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mmux_TDO1111181 (U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/Mmux_TDO111118)
+     LUT6:I1->O            1   0.254   1.112  U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i128 (U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i127)
+     LUT6:I1->O            1   0.254   0.958  U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i129 (U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i128)
+     LUT6:I2->O            1   0.254   0.958  U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i132 (U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i131)
+     LUT6:I2->O            0   0.254   0.000  U0/Debug.mdm_0/MDM_Core_I1/Mmux_TDO_i139 (U0/Debug.mdm_0/tdo)
+    BSCAN_SPARTAN6:TDO         0.000          U0/Debug.mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I
+    ----------------------------------------
+    Total                      7.719ns (1.776ns logic, 5.943ns route)
+                                       (23.0% logic, 77.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock apuf_multi_inst_1/apuf_array[0].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_1/apuf_array[1].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_1/apuf_array[2].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_1/apuf_array[3].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_1/apuf_array[4].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_1/apuf_array[5].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_1/apuf_array[6].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_1/apuf_array[7].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_2/apuf_array[0].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_2/apuf_array[1].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_2/apuf_array[2].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_2/apuf_array[3].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_2/apuf_array[4].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_2/apuf_array[5].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_2/apuf_array[6].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock apuf_multi_inst_2/apuf_array[7].apuf_instance/mux_array_inst/o_out2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |    4.928|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_clk
+-------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------+---------+---------+---------+---------+
+apuf_multi_inst_1/apuf_array[0].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_1/apuf_array[1].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_1/apuf_array[2].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_1/apuf_array[3].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_1/apuf_array[4].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_1/apuf_array[5].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_1/apuf_array[6].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_1/apuf_array[7].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_2/apuf_array[0].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_2/apuf_array[1].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_2/apuf_array[2].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_2/apuf_array[3].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_2/apuf_array[4].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_2/apuf_array[5].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_2/apuf_array[6].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+apuf_multi_inst_2/apuf_array[7].apuf_instance/mux_array_inst/o_out2|    1.280|         |         |         |
+i_clk                                                              |    9.519|         |         |         |
+mcs_0/U0/Debug.mdm_0/drck_i                                        |    4.589|         |         |         |
+mcs_0/U0/Debug.mdm_0/update                                        |    3.298|         |         |         |
+mcs_0/gpi1_interrupt                                               |    1.683|         |         |         |
+-------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mcs_0/U0/Debug.mdm_0/drck_i
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+i_clk                      |    3.850|         |         |         |
+mcs_0/U0/Debug.mdm_0/drck_i|    2.860|    4.093|    3.987|         |
+mcs_0/U0/Debug.mdm_0/update|         |    5.655|    4.062|         |
+mcs_0/gpi1_interrupt       |    3.226|         |         |         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mcs_0/U0/Debug.mdm_0/update
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+i_clk                      |    2.899|         |         |         |
+mcs_0/U0/Debug.mdm_0/drck_i|    1.402|         |         |         |
+mcs_0/U0/Debug.mdm_0/update|         |    4.933|    9.353|         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mcs_0/gpi1_interrupt
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+mcs_0/U0/Debug.mdm_0/drck_i|    1.250|         |         |         |
+mcs_0/U0/Debug.mdm_0/update|    1.535|         |         |         |
+mcs_0/gpi1_interrupt       |    2.329|         |         |         |
+---------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 16.33 secs
+ 
+--> 
+
+
+Total memory usage is 494624 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

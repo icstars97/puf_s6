@@ -4,7 +4,7 @@
 		<Desc>ISE Defaults, including packing registers in IOs off</Desc>
 	</StratHandle>
 	<Step Id="ngdbuild">
-		<Option Id="MoreOptsStr"><![CDATA[-bm "I:/FPGA_projects/xise_projects/puf/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/microblaze_mcs_v1_4_0.bmm"]]></Option>
+		<Option Id="MoreOptsStr"><![CDATA[-bm "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/microblaze_mcs_v1_4_0.bmm"]]></Option>
 	</Step>
 	<Step Id="map">
 		<Option Id="FFPackEnum">3</Option>

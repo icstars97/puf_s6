@@ -2,15 +2,15 @@
 
 set reloadAllCoreGenRepositories false
 
-set tclUtilsPath "i:/Xilinx/14.7/ISE_DS/PlanAhead/scripts/pa_cg_utils.tcl"
+set tclUtilsPath "/opt/Xilinx/14.7/ISE_DS/PlanAhead/scripts/pa_cg_utils.tcl"
 
 set repoPaths ""
 
-set cgIndexMapPath "I:/FPGA_projects/xise_projects/puf/puf_proj/puf_proj.srcs/sources_1/ip/cg_nt_index_map.xml"
+set cgIndexMapPath "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/ip/cg_lin_index_map.xml"
 
-set cgProjectPath "i:/FPGA_projects/xise_projects/puf/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/coregen.cgc"
+set cgProjectPath "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/coregen.cgc"
 
-set ipFile "i:/FPGA_projects/xise_projects/puf/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/microblaze_mcs_v1_4_0.xco"
+set ipFile "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/microblaze_mcs_v1_4_0.xco"
 
 set ipName "microblaze_mcs_v1_4_0"
 
@@ -22,10 +22,10 @@ set chains "GENERATE_CURRENT_CHAIN"
 
 set params ""
 
-set bomFilePath "i:/FPGA_projects/xise_projects/puf/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/pa_cg_bom.xml"
+set bomFilePath "/home/ise/ise_proj/puf_s6/puf_proj/puf_proj.srcs/sources_1/ip/microblaze_mcs_v1_4_0/pa_cg_bom.xml"
 
 # generate the IP
-set result [source "i:/Xilinx/14.7/ISE_DS/PlanAhead/scripts/pa_cg_gen_out_prods.tcl"]
+set result [source "/opt/Xilinx/14.7/ISE_DS/PlanAhead/scripts/pa_cg_gen_out_prods.tcl"]
 
 exit $result
 

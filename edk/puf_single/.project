@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>puf_single</name>
-	<comment>puf_bsp - microblaze_mcs_v1_4_0</comment>
+	<comment>puf_single_bsp - microblaze_mcs_v1_4_0</comment>
 	<projects>
-		<project>puf_bsp</project>
+		<project>puf_single_bsp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

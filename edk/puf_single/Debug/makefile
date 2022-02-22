@@ -8,7 +8,6 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -38,7 +37,7 @@ all: puf_single.elf secondary-outputs
 puf_single.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MicroBlaze gcc linker'
-	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../puf_bsp/microblaze_mcs_v1_4_0/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "puf_single.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../puf_single_bsp/microblaze_mcs_v1_4_0/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "puf_single.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -50,7 +49,7 @@ puf_single.elf.size: puf_single.elf
 
 puf_single.elf.elfcheck: puf_single.elf
 	@echo 'Invoking: Xilinx ELF Check'
-	elfcheck puf_single.elf -hw ../../puf_hw_platform/system.xml -pe microblaze_mcs_v1_4_0  |tee "puf_single.elf.elfcheck"
+	elfcheck puf_single.elf -hw ../../puf_platform/system.xml -pe microblaze_mcs_v1_4_0  |tee "puf_single.elf.elfcheck"
 	@echo 'Finished building: $@'
 	@echo ' '
 

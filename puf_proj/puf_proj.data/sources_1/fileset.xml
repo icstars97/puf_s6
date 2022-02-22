@@ -18,13 +18,6 @@
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/microblaze_mcs_v1_4_0/microblaze_mcs_v1_4_0.xci">
-      <FileInfo>
-        <Attr Name="UsedInSynthesis" Val="1"/>
-        <Attr Name="UsedInImplementation" Val="1"/>
-        <Attr Name="UsedInSimulation" Val="1"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/impl/arbiter_puf.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../src/hdl/impl/arbiter_puf.vhd"/>
@@ -33,11 +26,10 @@
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/impl/toplevel_single.vhd">
+    <File Path="$PSRCDIR/sources_1/ip/microblaze_mcs_v1_4_0/microblaze_mcs_v1_4_0.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../src/hdl/impl/toplevel_single.vhd"/>
-        <Attr Name="ImportTime" Val="1645212571"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
     </File>
@@ -53,6 +45,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../src/hdl/impl/toplevel.vhd"/>
         <Attr Name="ImportTime" Val="1644956253"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/impl/toplevel_single.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/hdl/impl/toplevel_single.vhd"/>
+        <Attr Name="ImportTime" Val="1645212571"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
       </FileInfo>
@@ -75,7 +75,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="toplevel_single"/>
+      <Option Name="TopModule" Val="toplevel"/>
     </Config>
   </FileSet>
 </DARoots>

@@ -1,3 +1,0 @@
-PROCESSOR=microblaze_mcs_v1_4_0
-REPOSITORIES=
-HWSPEC=../puf_hw_platform/system.xml

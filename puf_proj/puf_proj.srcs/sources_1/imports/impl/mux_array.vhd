@@ -57,14 +57,14 @@ begin
 	
 	array_gen : for i in 0 to arr_length - 1 generate
 	
-		mux_instance_even : entity work.mux(clb_prim_f8)
+		mux_instance_even : entity work.mux(clb_prim_f7)
 			port map(
 				i_a => s_intc(2 * i),
 				i_b => s_intc(2 * i + 1),
 				i_s => i_ch(i),
 				o_y => s_intc(2 * (i + 1)));
 				
-		mux_instance_odd : entity work.mux(clb_prim_f8)
+		mux_instance_odd : entity work.mux(clb_prim_f7)
 			port map(
 				i_a => s_intc(2 * i + 1),
 				i_b => s_intc(2 * i),
